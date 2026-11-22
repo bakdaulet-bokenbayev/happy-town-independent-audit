@@ -1,0 +1,786 @@
+{
+  "origin": "http://127.0.0.1:3302",
+  "engine": "Playwright 1.62.1",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "events": [
+    {
+      "event": "request",
+      "roleContext": "ADMIN",
+      "method": "GET",
+      "endpoint": "/login",
+      "timestampUtc": "2026-11-20T16:47:50.587Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "ADMIN",
+      "method": "GET",
+      "endpoint": "/login",
+      "timestampUtc": "2026-11-20T16:47:50.635Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "ADMIN",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "timestampUtc": "2026-11-20T16:47:51.674Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "ADMIN",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "timestampUtc": "2026-11-20T16:47:52.129Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "ADMIN",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:47:52.13Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "ADMIN",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:47:52.147Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "ADMIN",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "timestampUtc": "2026-11-20T16:47:52.539Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "ADMIN",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "timestampUtc": "2026-11-20T16:47:52.589Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "ADMIN",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "timestampUtc": "2026-11-20T16:47:53.306Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "ADMIN",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "timestampUtc": "2026-11-20T16:47:53.339Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "ADMIN",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "timestampUtc": "2026-11-20T16:47:53.62Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "ADMIN",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "timestampUtc": "2026-11-20T16:47:53.663Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/login",
+      "timestampUtc": "2026-11-20T16:47:54.162Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/login",
+      "timestampUtc": "2026-11-20T16:47:54.207Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "timestampUtc": "2026-11-20T16:47:55.3Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "timestampUtc": "2026-11-20T16:47:55.671Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:47:55.671Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:47:55.688Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "timestampUtc": "2026-11-20T16:47:55.967Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "timestampUtc": "2026-11-20T16:47:55.999Z",
+      "status": 403
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "timestampUtc": "2026-11-20T16:47:56.044Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "timestampUtc": "2026-11-20T16:47:56.223Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:47:56.834Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:47:56.896Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/login",
+      "timestampUtc": "2026-11-20T16:47:57.133Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/login",
+      "timestampUtc": "2026-11-20T16:47:57.181Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "timestampUtc": "2026-11-20T16:47:58.166Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "timestampUtc": "2026-11-20T16:47:58.553Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:47:58.554Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:47:58.576Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "timestampUtc": "2026-11-20T16:47:58.833Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "timestampUtc": "2026-11-20T16:47:58.997Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:47:59.35Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:47:59.395Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "timestampUtc": "2026-11-20T16:47:59.439Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "timestampUtc": "2026-11-20T16:47:59.541Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:47:59.828Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:47:59.848Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "timestampUtc": "2026-11-20T16:47:59.878Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "timestampUtc": "2026-11-20T16:47:59.984Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "timestampUtc": "2026-11-20T16:48:00.396Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "timestampUtc": "2026-11-20T16:48:00.512Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/login",
+      "timestampUtc": "2026-11-20T16:48:01.119Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/login",
+      "timestampUtc": "2026-11-20T16:48:01.165Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "PARENT",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "timestampUtc": "2026-11-20T16:48:02.21Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "PARENT",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "timestampUtc": "2026-11-20T16:48:02.569Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:48:02.57Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:48:02.593Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "timestampUtc": "2026-11-20T16:48:02.808Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "timestampUtc": "2026-11-20T16:48:02.897Z",
+      "status": 403
+    },
+    {
+      "event": "request",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/api/students/[STU-01]",
+      "timestampUtc": "2026-11-20T16:48:02.939Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/api/students/[STU-01]",
+      "timestampUtc": "2026-11-20T16:48:02.99Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/login",
+      "timestampUtc": "2026-11-20T16:48:03.643Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/login",
+      "timestampUtc": "2026-11-20T16:48:03.699Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "PARENT",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "timestampUtc": "2026-11-20T16:48:04.779Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "PARENT",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "timestampUtc": "2026-11-20T16:48:05.199Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:48:05.2Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T16:48:05.217Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/parent",
+      "timestampUtc": "2026-11-20T16:48:05.617Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/parent",
+      "timestampUtc": "2026-11-20T16:48:05.726Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/api/students/[STU-01]",
+      "timestampUtc": "2026-11-20T16:48:06.592Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "PARENT",
+      "method": "GET",
+      "endpoint": "/api/students/[STU-01]",
+      "timestampUtc": "2026-11-20T16:48:06.642Z",
+      "status": 404
+    }
+  ],
+  "screenshots": [
+    {
+      "evidenceId": "IV-HT17-SEARCH",
+      "testId": "HT-17",
+      "description": "Exact reserved-domain search and one matching teacher, with personal fields masked",
+      "filename": "IV-HT17-SEARCH.png",
+      "timestampUtc": "2026-11-20T16:47:53.925Z",
+      "sha256": "c4f0a886e9e414a963a1c862c4b2abeed5c196193939c70839367f479f29ec29",
+      "storedImage": "../final-validation/FV-HT17-01-teacher-search-full.png"
+    },
+    {
+      "evidenceId": "IV-HT11-CONTEXT-A",
+      "testId": "HT-11",
+      "description": "Original independently signed-in TEACHER context remains on its protected dashboard after the second normal sign-in",
+      "filename": "IV-HT11-CONTEXT-A.png",
+      "timestampUtc": "2026-11-20T16:48:00.384Z",
+      "sha256": "e0c92034719b250588014decb87f5bde50359a472bfc8d37c8a67969ee9cd061",
+      "storedImage": "IV-HT11-CONTEXT-A.png"
+    },
+    {
+      "evidenceId": "IV-HT11-CONTEXT-B",
+      "testId": "HT-11",
+      "description": "Second independently signed-in TEACHER context displays the same dashboard",
+      "filename": "IV-HT11-CONTEXT-B.png",
+      "timestampUtc": "2026-11-20T16:48:00.884Z",
+      "sha256": "e0c92034719b250588014decb87f5bde50359a472bfc8d37c8a67969ee9cd061",
+      "storedImage": "IV-HT11-CONTEXT-A.png"
+    },
+    {
+      "evidenceId": "IV-HT15-PARENT-C-OWN",
+      "testId": "HT-15",
+      "description": "English dashboard for PARENT-C with its own linked student, identifiers masked",
+      "filename": "IV-HT15-PARENT-C-OWN.png",
+      "timestampUtc": "2026-11-20T16:48:06.584Z",
+      "sha256": "d59c11d86b419fc2c5594d61f4b4060d6644dfac43b4c1818f76e42fc901913f",
+      "storedImage": "IV-HT15-PARENT-C-OWN.png"
+    }
+  ],
+  "steps": [
+    {
+      "name": "Read-only fixture verification",
+      "timestampUtc": "2026-11-20T16:47:49.737Z",
+      "database": "happy_town_audit_test",
+      "parent_c_unprovisioned": true,
+      "parent_c_own": true,
+      "parent_c_foreign": false,
+      "parent_a_own": true,
+      "parent_a_foreign": false,
+      "teacher_fixture": true
+    },
+    {
+      "label": "Ordinary sign-in",
+      "role": "ADMIN",
+      "callbackStatus": 200,
+      "sessionStatus": 200,
+      "authenticatedRole": "ADMIN"
+    },
+    {
+      "name": "HT-14",
+      "timestampUtc": "2026-11-20T16:47:52.617Z",
+      "caseId": "HT-14",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "queryKeys": [
+        "kind"
+      ],
+      "query": {
+        "kind": "teachers"
+      },
+      "role": "ADMIN",
+      "status": 200,
+      "itemsReturned": true,
+      "errorCode": null
+    },
+    {
+      "name": "HT-17",
+      "timestampUtc": "2026-11-20T16:47:53.688Z",
+      "caseId": "HT-17",
+      "role": "ADMIN",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "queryKeys": [
+        "kind",
+        "query",
+        "status",
+        "sort",
+        "page",
+        "pageSize"
+      ],
+      "syntheticEmailInRequest": true,
+      "status": 200,
+      "requestTimestampUtc": "2026-11-20T16:47:53.62Z",
+      "sameResponseUrl": true,
+      "matchedExpectedFixture": true,
+      "navigationLocationUnchanged": true,
+      "fixtureInSampledTabNavigationHistory": false
+    },
+    {
+      "name": "ADMIN role and contact search",
+      "timestampUtc": "2026-11-20T16:47:53.952Z",
+      "completed": true
+    },
+    {
+      "label": "Ordinary sign-in",
+      "role": "TEACHER",
+      "callbackStatus": 200,
+      "sessionStatus": 200,
+      "authenticatedRole": "TEACHER"
+    },
+    {
+      "name": "HT-14",
+      "timestampUtc": "2026-11-20T16:47:56.034Z",
+      "caseId": "HT-14",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "queryKeys": [
+        "kind"
+      ],
+      "query": {
+        "kind": "teachers"
+      },
+      "role": "TEACHER",
+      "status": 403,
+      "itemsReturned": false,
+      "errorCode": "FORBIDDEN"
+    },
+    {
+      "name": "Context A before separate sign-in",
+      "timestampUtc": "2026-11-20T16:47:56.918Z",
+      "caseId": "HT-11",
+      "role": "TEACHER",
+      "protectedRead": {
+        "method": "GET",
+        "endpoint": "/teacher",
+        "status": 200
+      },
+      "sessionRead": {
+        "method": "GET",
+        "endpoint": "/api/auth/session",
+        "status": 200,
+        "teacherPresent": true,
+        "sameAccount": true
+      }
+    },
+    {
+      "label": "Ordinary sign-in",
+      "role": "TEACHER",
+      "callbackStatus": 200,
+      "sessionStatus": 200,
+      "authenticatedRole": "TEACHER"
+    },
+    {
+      "name": "Independent sign-ins",
+      "timestampUtc": "2026-11-20T16:47:58.819Z",
+      "caseId": "HT-11",
+      "sameTestAccount": true,
+      "sharedBrowserData": false,
+      "sessionArtifactsCopied": false
+    },
+    {
+      "name": "Context A after context B signed in",
+      "timestampUtc": "2026-11-20T16:47:59.425Z",
+      "caseId": "HT-11",
+      "role": "TEACHER",
+      "protectedRead": {
+        "method": "GET",
+        "endpoint": "/teacher",
+        "status": 200
+      },
+      "sessionRead": {
+        "method": "GET",
+        "endpoint": "/api/auth/session",
+        "status": 200,
+        "teacherPresent": true,
+        "sameAccount": true
+      }
+    },
+    {
+      "name": "Context B after its independent sign-in",
+      "timestampUtc": "2026-11-20T16:47:59.868Z",
+      "caseId": "HT-11",
+      "role": "TEACHER",
+      "protectedRead": {
+        "method": "GET",
+        "endpoint": "/teacher",
+        "status": 200
+      },
+      "sessionRead": {
+        "method": "GET",
+        "endpoint": "/api/auth/session",
+        "status": 200,
+        "teacherPresent": true,
+        "sameAccount": true
+      }
+    },
+    {
+      "name": "TEACHER role and two-context session check",
+      "timestampUtc": "2026-11-20T16:48:00.93Z",
+      "completed": true
+    },
+    {
+      "label": "Ordinary sign-in",
+      "role": "PARENT",
+      "callbackStatus": 200,
+      "sessionStatus": 200,
+      "authenticatedRole": "PARENT"
+    },
+    {
+      "name": "HT-14",
+      "timestampUtc": "2026-11-20T16:48:02.931Z",
+      "caseId": "HT-14",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "queryKeys": [
+        "kind"
+      ],
+      "query": {
+        "kind": "teachers"
+      },
+      "role": "PARENT",
+      "status": 403,
+      "itemsReturned": false,
+      "errorCode": "FORBIDDEN"
+    },
+    {
+      "name": "HT-15",
+      "timestampUtc": "2026-11-20T16:48:03.007Z",
+      "caseId": "HT-15",
+      "method": "GET",
+      "endpoint": "/api/students/[STU-01]",
+      "fixtureAccount": "PARENT-A",
+      "role": "PARENT",
+      "linked": true,
+      "status": 200,
+      "payloadStudentPresent": true,
+      "returnedExpectedFixture": true
+    },
+    {
+      "name": "HT-15",
+      "timestampUtc": "2026-11-20T16:48:03.064Z",
+      "caseId": "HT-15",
+      "method": "GET",
+      "endpoint": "/api/students/[STU-02]",
+      "fixtureAccount": "PARENT-A",
+      "role": "PARENT",
+      "linked": false,
+      "status": 404,
+      "payloadStudentPresent": false,
+      "returnedExpectedFixture": false
+    },
+    {
+      "name": "PARENT-A role and record comparison",
+      "timestampUtc": "2026-11-20T16:48:03.076Z",
+      "completed": true
+    },
+    {
+      "name": "Temporary fixture provision",
+      "timestampUtc": "2026-11-20T16:48:03.43Z",
+      "database": "happy_town_audit_test",
+      "fixture": "PARENT-C",
+      "fieldsChanged": [
+        "login identifier",
+        "bcrypt password hash"
+      ]
+    },
+    {
+      "label": "Ordinary sign-in",
+      "role": "PARENT",
+      "callbackStatus": 200,
+      "sessionStatus": 200,
+      "authenticatedRole": "PARENT"
+    },
+    {
+      "name": "HT-15",
+      "timestampUtc": "2026-11-20T16:48:05.607Z",
+      "caseId": "HT-15",
+      "method": "GET",
+      "endpoint": "/api/students/[STU-02]",
+      "fixtureAccount": "PARENT-C",
+      "role": "PARENT",
+      "linked": true,
+      "status": 200,
+      "payloadStudentPresent": true,
+      "returnedExpectedFixture": true
+    },
+    {
+      "name": "HT-15",
+      "timestampUtc": "2026-11-20T16:48:06.662Z",
+      "caseId": "HT-15",
+      "method": "GET",
+      "endpoint": "/api/students/[STU-01]",
+      "fixtureAccount": "PARENT-C",
+      "role": "PARENT",
+      "linked": false,
+      "status": 404,
+      "payloadStudentPresent": false,
+      "returnedExpectedFixture": false
+    },
+    {
+      "name": "Temporary fixture restored",
+      "timestampUtc": "2026-11-20T16:48:06.68Z",
+      "fixture": "PARENT-C",
+      "restoredLoginIdentifierAndPasswordHashToNull": true
+    },
+    {
+      "name": "PARENT-C temporary synthetic positive and negative controls",
+      "timestampUtc": "2026-11-20T16:48:06.68Z",
+      "completed": true
+    }
+  ],
+  "chromium": "157.0.8103.79"
+}

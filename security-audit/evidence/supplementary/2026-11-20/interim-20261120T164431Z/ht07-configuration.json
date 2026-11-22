@@ -1,0 +1,48 @@
+{
+  "evidenceId": "IV-HT07-CONFIG-01",
+  "recordedUtc": "2026-11-20T16:45:57.384Z",
+  "criterion": "v5.0.0-6.3.1",
+  "module": "lib/auth/login-rate-limit.ts",
+  "isolatedModuleOnly": true,
+  "noLiveCredentialAbuseTraffic": true,
+  "syntheticClockBehavior": {
+    "allowAtFailureCountsZeroThroughFive": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "independentKeyAllowed": true,
+    "deniedJustBeforeExpiry": true,
+    "permittedAtExpiry": true,
+    "deniedBeforeClear": true,
+    "permittedAfterClear": true
+  },
+  "readOnlyHttp": {
+    "method": "GET",
+    "endpoint": "/login",
+    "origin": "http://127.0.0.1:3302",
+    "status": 200,
+    "selectedHeaders": {
+      "cache-control": "no-cache, must-revalidate",
+      "content-security-policy": null,
+      "strict-transport-security": null,
+      "x-frame-options": null,
+      "x-content-type-options": null,
+      "referrer-policy": null,
+      "permissions-policy": null
+    }
+  },
+  "sourceInspection": {
+    "counterStorage": "in-memory process map",
+    "threshold": 5,
+    "windowSeconds": 600,
+    "scope": "HMAC-derived account key",
+    "hook": "Auth handler checks limiter and clears failures after successful authentication.",
+    "sessionCookieDefaults": "HttpOnly and SameSite=Lax. Secure selection depends on HTTPS. No cookie values were collected.",
+    "nextConfigDefinesHeaderOverrides": false
+  },
+  "limitation": "Module behavior and one local response do not establish production security or conformity to an unavailable documented protection baseline."
+}

@@ -1,0 +1,125 @@
+{
+  "test": "HT-11",
+  "asvs": "v5.0.0-7.2.4",
+  "revision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "database": "happy_town_audit_test",
+  "origin": "http://127.0.0.1:3302",
+  "accountAlias": "TEACHER-A",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "language": "en",
+  "method": "Independent ordinary sign-ins in separate Playwright contexts",
+  "events": [
+    {
+      "context": "A",
+      "action": "Before sign-in",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "authenticatedUserReturned": false,
+      "timestampUtc": "2026-11-20T18:37:43.693Z"
+    },
+    {
+      "context": "A",
+      "action": "Credentials sign-in",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "status": 200,
+      "timestampUtc": "2026-11-20T18:37:45.316Z",
+      "sessionStatus": 200,
+      "authenticatedUserReturned": true,
+      "matchesTeacherA": true
+    },
+    {
+      "context": "A",
+      "action": "Before second authentication",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "status": 200,
+      "finalPath": "/teacher",
+      "finalStatus": 200,
+      "sessionStatus": 200,
+      "authenticatedUserReturned": true,
+      "matchesTeacherA": true,
+      "dashboardRendered": true,
+      "accepted": true,
+      "timestampUtc": "2026-11-20T18:37:45.977Z"
+    },
+    {
+      "context": "B",
+      "action": "Before sign-in",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "authenticatedUserReturned": false,
+      "timestampUtc": "2026-11-20T18:37:46.351Z"
+    },
+    {
+      "context": "B",
+      "action": "Credentials sign-in",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "status": 200,
+      "timestampUtc": "2026-11-20T18:37:47.934Z",
+      "sessionStatus": 200,
+      "authenticatedUserReturned": true,
+      "matchesTeacherA": true
+    },
+    {
+      "context": "B",
+      "action": "After second authentication",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "status": 200,
+      "finalPath": "/teacher",
+      "finalStatus": 200,
+      "sessionStatus": 200,
+      "authenticatedUserReturned": true,
+      "matchesTeacherA": true,
+      "dashboardRendered": true,
+      "accepted": true,
+      "timestampUtc": "2026-11-20T18:37:48.541Z"
+    },
+    {
+      "context": "A",
+      "action": "After second authentication",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "status": 200,
+      "finalPath": "/teacher",
+      "finalStatus": 200,
+      "sessionStatus": 200,
+      "authenticatedUserReturned": true,
+      "matchesTeacherA": true,
+      "dashboardRendered": true,
+      "accepted": true,
+      "timestampUtc": "2026-11-20T18:37:48.949Z"
+    }
+  ],
+  "screenshots": [
+    {
+      "context": "B",
+      "stage": "after",
+      "filename": "HT11-context-B-after.png",
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "timestampUtc": "2026-11-20T18:37:49.224Z"
+    },
+    {
+      "context": "A",
+      "stage": "after",
+      "filename": "HT11-context-A-after.png",
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "timestampUtc": "2026-11-20T18:37:49.322Z"
+    }
+  ],
+  "browserVersion": "157.0.8103.79",
+  "bothSignInsMatchedSameAccount": true
+}

@@ -1,0 +1,19 @@
+{
+  "evidenceId": "FDV-HT07-PUBLIC",
+  "testId": "HT-07",
+  "requirementId": "v5.0.0-6.3.1",
+  "scenario": "Public sign-in page reachability",
+  "observedUtc": "2026-11-21T20:50:15.1699564+00:00",
+  "revision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "client": "System.Net.Http HttpClient",
+  "browser": null,
+  "method": "GET",
+  "endpoint": "/login",
+  "origin": "http://127.0.0.1:3302",
+  "status": 200,
+  "contentType": "text/html; charset=utf-8",
+  "passwordInputPresent": true,
+  "credentialSubmitted": false,
+  "screenshot": null,
+  "determination": "Public sign-in page available. Limiter decision untested."
+}

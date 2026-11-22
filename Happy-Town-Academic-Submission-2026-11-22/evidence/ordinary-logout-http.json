@@ -1,0 +1,70 @@
+{
+  "revision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "origin": "http://127.0.0.1:3302",
+  "environment": "happy_town_audit_test",
+  "startedUtc": "2026-11-21T20:12:22.130Z",
+  "events": [
+    {
+      "id": "RV-HT12-11",
+      "testId": "HT-12",
+      "context": "Single browser",
+      "timestampUtc": "2026-11-21T20:12:24.648Z",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "status": 200,
+      "callbackReturnedError": false
+    },
+    {
+      "id": "RV-HT12-12",
+      "testId": "HT-12",
+      "context": "Single browser",
+      "timestampUtc": "2026-11-21T20:12:25.429Z",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "status": 200,
+      "protectedContentRendered": true,
+      "finalPath": "/teacher"
+    },
+    {
+      "id": "RV-HT12-13",
+      "testId": "HT-12",
+      "context": "Single browser",
+      "timestampUtc": "2026-11-21T20:12:25.862Z",
+      "method": "POST",
+      "endpoint": "/api/auth/signout",
+      "status": 200
+    },
+    {
+      "id": "RV-HT12-14",
+      "testId": "HT-12",
+      "context": "Signed-out original browser",
+      "timestampUtc": "2026-11-21T20:12:25.949Z",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "authenticatedUserReturned": false
+    }
+  ],
+  "screenshots": [],
+  "databasePreflight": {
+    "database": "happy_town_audit_test",
+    "auditEventCount": 75
+  },
+  "browserVersion": "157.0.8103.79",
+  "playwrightVersion": "1.62.1",
+  "databasePostflight": {
+    "database": "happy_town_audit_test",
+    "auditEventCount": 76,
+    "changeInAuditEventCount": 1,
+    "authenticationEventsDuringRun": [
+      {
+        "action": "LOGIN",
+        "result": "SUCCESS",
+        "count": 1
+      }
+    ]
+  },
+  "finishedUtc": "2026-11-21T20:12:27.142Z",
+  "failedAt": "HT-12 signed-out session and protected-route observations",
+  "completed": false
+}

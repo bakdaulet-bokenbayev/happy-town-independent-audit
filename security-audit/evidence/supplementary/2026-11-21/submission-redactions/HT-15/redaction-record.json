@@ -1,0 +1,92 @@
+[
+  {
+    "testId": "HT-15",
+    "evidenceId": "HT15-01-headers-redacted",
+    "captureTimeCET": "2026-11-21 19:47:29.634",
+    "originalFilename": "HT15-01-headers.png",
+    "originalSha256": "802d8651bdb73bce9e92f6a691d570e92654d5cc4a708f40bec887f241642a08",
+    "submissionFilename": "HT15-01-headers-redacted.png",
+    "submissionSha256": "36fd4dc07201ac51044e67ae99ba63ed18391e23270b2edc9e98c6b9c5170805",
+    "maskedAreas": [
+      [
+        31,
+        308,
+        375,
+        333
+      ],
+      [
+        1044,
+        357,
+        1403,
+        383
+      ]
+    ],
+    "pixelCheck": "All source pixels outside the masks are identical. A labeled footer was appended."
+  },
+  {
+    "testId": "HT-15",
+    "evidenceId": "HT15-01-response-redacted",
+    "captureTimeCET": "2026-11-21 19:49:28.233",
+    "originalFilename": "HT15-01-response.png",
+    "originalSha256": "0ed982643cc25a671044dbe07dcb331d31a20fc72a1e4166e00b3b4b9c768669",
+    "submissionFilename": "HT15-01-response-redacted.png",
+    "submissionSha256": "47166071fb763688c257fa46e109de68aafb62eeaa1942ed6ae29e23718e63aa",
+    "maskedAreas": [
+      [
+        31,
+        308,
+        375,
+        333
+      ],
+      [
+        638,
+        386,
+        1020,
+        407
+      ]
+    ],
+    "pixelCheck": "All source pixels outside the masks are identical. A labeled footer was appended."
+  },
+  {
+    "testId": "HT-15",
+    "evidenceId": "HT15-02-headers-redacted",
+    "captureTimeCET": "2026-11-21 19:47:10.417",
+    "originalFilename": "HT15-02-headers.png",
+    "originalSha256": "ab371c6e834321b8ca91aab4ae4c78e795cfb9d21d8848b9831a13f45483d623",
+    "submissionFilename": "HT15-02-headers-redacted.png",
+    "submissionSha256": "ab582b12fec150e930683dea2bac2f7f15e7cf057d94768dbe5bd5bc1279f573",
+    "maskedAreas": [
+      [
+        31,
+        308,
+        375,
+        333
+      ],
+      [
+        1044,
+        357,
+        1403,
+        383
+      ]
+    ],
+    "pixelCheck": "All source pixels outside the masks are identical. A labeled footer was appended."
+  },
+  {
+    "testId": "HT-15",
+    "evidenceId": "HT15-02-response-redacted",
+    "captureTimeCET": "2026-11-21 19:46:56.202",
+    "originalFilename": "HT15-02-response.png",
+    "originalSha256": "20aa294d47cfc17925591eb42182d16a4dfa4a3fdeffe6824e0089f0ddbc0e7a",
+    "submissionFilename": "HT15-02-response-redacted.png",
+    "submissionSha256": "1206322428da96f490839f9b8086a34d72d982cc6c84e83168ffa257e7960f49",
+    "maskedAreas": [
+      [
+        31,
+        308,
+        375,
+        333
+      ]
+    ],
+    "pixelCheck": "All source pixels outside the masks are identical. A labeled footer was appended."
+  }
+]

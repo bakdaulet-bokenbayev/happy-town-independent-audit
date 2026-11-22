@@ -1,0 +1,17 @@
+# Supplementary browser evidence — 20 November 2026
+
+**Environment.** Happy Town at `http://127.0.0.1:3300` in the in-app browser. The Windows listener had been running since 19 November. The dedicated audit PostgreSQL container was healthy and bound to loopback. A read-only inventory counted 23 non-archived users, 24 students, 24 parent/student links and five groups, consistent with the original audit inventory. The workspace HEAD was `42a982027c3c0d2324472abb21d048a4bd9391b3` on 20 November. It differs from the audited Git revision in package and demo-seeding material. The screenshots are observations of the running local site. They do not establish which exact revision the live process served.
+
+The five JPEGs are the original image bytes returned by browser capture. Capture framing selected the login card or the dashboard heading. Display PNGs under `display/` are pixel crops for document layout. The login overview excludes the fixed multilingual logo and the field crops focus on the English password control. No application screens were edited. Times below are local CET (UTC+01:00).
+
+| Evidence ID and original capture | Time | Role | What is visible | Limitation |
+| --- | --- | --- | --- | --- |
+| [S20-HT-06-01 · HT-06-en-login-empty.jpg](HT-06-en-login-empty.jpg) | 14:11:50.767 | Unauthenticated | English login card with EN selected and empty fields. | Shows the form before any input. |
+| [S20-HT-06-02 · HT-06-en-password-masked.jpg](HT-06-en-password-masked.jpg) | 14:11:57.367 | Unauthenticated | An entered test string is masked. The input type was observed as `password`. | Display-only input was never submitted. |
+| [S20-HT-06-03 · HT-06-en-password-revealed-demo.jpg](HT-06-en-password-revealed-demo.jpg) | 14:12:03.555 | Unauthenticated | The reveal control displays a disposable demonstration string. The input type was `text`. | The visible text is unrelated to any user or synthetic account password. |
+| [S20-HT-06-04 · HT-06-en-password-restored.jpg](HT-06-en-password-restored.jpg) | 14:12:03.949 | Unauthenticated | The same display-only input is masked again. The input returned to type `password`. | The string was cleared. This does not exercise sign-in or session creation. |
+| [S20-HT-12-01 · HT-12-en-teacher-dashboard.jpg](HT-12-en-teacher-dashboard.jpg) | 14:14:00.620 | Synthetic TEACHER | The authenticated English Teacher Dashboard heading after ordinary sign-in. | The crop omits account and record details. It supports the signed-in state only. |
+
+After clicking the application’s sign-out control, the same-origin session endpoint still reported a user. The standard Auth.js sign-out confirmation was available, but its POST action pointed to `http://localhost:3300` rather than the scoped origin `http://127.0.0.1:3300`. The scoped session still reported a user after the attempted sign-out workflow. No authenticated session body, cookie values or headers were saved. No successful supplementary sign-out, browser cookie-removal evidence or prior token reuse was captured. This observation does not establish a cause or revise HT-F01.
+
+No new Chrome DevTools captures were obtained for HT-14, HT-15 or HT-17. Native Chrome Computer Use stopped when it could not verify the Windows browser URL. The report retains the structured HTTP outcomes and sanitized request metadata from 19 November fieldwork. [Original Phase 3 evidence](../../phase-3/environment.md)

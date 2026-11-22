@@ -1,0 +1,213 @@
+{
+  "auditRevision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "origin": "http://127.0.0.1:3302",
+  "browser": {
+    "name": "Google Chrome",
+    "version": "157.0.8103.79"
+  },
+  "fixturePreflight": {
+    "database": "happy_town_audit_test",
+    "parent": true,
+    "own": true,
+    "foreign": false,
+    "other_link": true
+  },
+  "loginControls": [
+    {
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "role": "TEACHER",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "role": "TEACHER"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "role": "PARENT",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "role": "PARENT"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "role": "ADMIN",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "role": "ADMIN"
+    }
+  ],
+  "httpObservations": [
+    {
+      "id": "HT14-01",
+      "role": "ADMIN",
+      "fixture": null,
+      "method": "GET",
+      "endpoint": "/api/admin/entities?kind=teachers",
+      "timestampUtc": "2026-11-21T18:51:55.111Z",
+      "status": 200,
+      "hasManagementItems": true,
+      "hasStudentRecord": false,
+      "studentIdentityMatches": null
+    },
+    {
+      "id": "HT14-02",
+      "role": "TEACHER",
+      "fixture": null,
+      "method": "GET",
+      "endpoint": "/api/admin/entities?kind=teachers",
+      "timestampUtc": "2026-11-21T18:40:41.428Z",
+      "status": 403,
+      "hasManagementItems": false,
+      "hasStudentRecord": false,
+      "studentIdentityMatches": null
+    },
+    {
+      "id": "HT14-03",
+      "role": "PARENT",
+      "fixture": null,
+      "method": "GET",
+      "endpoint": "/api/admin/entities?kind=teachers",
+      "timestampUtc": "2026-11-21T18:46:04.842Z",
+      "status": 403,
+      "hasManagementItems": false,
+      "hasStudentRecord": false,
+      "studentIdentityMatches": null
+    },
+    {
+      "id": "HT14-04",
+      "role": "ANONYMOUS",
+      "fixture": null,
+      "method": "GET",
+      "endpoint": "/api/admin/entities?kind=teachers",
+      "timestampUtc": "2026-11-21T18:38:54.952Z",
+      "status": 401,
+      "hasManagementItems": false,
+      "hasStudentRecord": false,
+      "studentIdentityMatches": null
+    },
+    {
+      "id": "HT15-01",
+      "role": "PARENT",
+      "fixture": "STU-01",
+      "method": "GET",
+      "endpoint": "/api/students/[STU-01]",
+      "timestampUtc": "2026-11-21T18:47:11.943Z",
+      "status": 200,
+      "hasManagementItems": false,
+      "hasStudentRecord": true,
+      "studentIdentityMatches": true
+    },
+    {
+      "id": "HT15-02",
+      "role": "PARENT",
+      "fixture": "STU-02",
+      "method": "GET",
+      "endpoint": "/api/students/[STU-02]",
+      "timestampUtc": "2026-11-21T18:46:40.035Z",
+      "status": 404,
+      "hasManagementItems": false,
+      "hasStudentRecord": false,
+      "studentIdentityMatches": null
+    }
+  ],
+  "screenshots": [
+    {
+      "testId": "HT14-01",
+      "path": "HT-14/HT14-01-headers.png",
+      "view": "headers",
+      "captureSavedUtc": "2026-11-21T18:52:16.319Z",
+      "sha256": "3e2d20f10e31f9944562458c2466cad43dacef48cb7b672bfd5df07870a31c89"
+    },
+    {
+      "testId": "HT14-01",
+      "path": "HT-14/HT14-01-response.png",
+      "view": "response",
+      "captureSavedUtc": "2026-11-21T18:53:15.032Z",
+      "sha256": "3a183c7dcfc8fa43ba24a433e3c0ea770ad52e50057e24eec118af8584911823"
+    },
+    {
+      "testId": "HT14-02",
+      "path": "HT-14/HT14-02-headers.png",
+      "view": "headers",
+      "captureSavedUtc": "2026-11-21T18:41:08.603Z",
+      "sha256": "34a2d6b22ede8a2cd3c179e14b785515e1222bf6d41a984165fb206ae0e25d63"
+    },
+    {
+      "testId": "HT14-02",
+      "path": "HT-14/HT14-02-response.png",
+      "view": "response",
+      "captureSavedUtc": "2026-11-21T18:40:59.254Z",
+      "sha256": "431124a86f634b53984c06080d0cda4afa7ec8be49fb94d975f8e643ecc2a576"
+    },
+    {
+      "testId": "HT14-03",
+      "path": "HT-14/HT14-03-headers.png",
+      "view": "headers",
+      "captureSavedUtc": "2026-11-21T18:46:27.370Z",
+      "sha256": "6a525cd02af69081d52ac3db6abfaaf3a34b20efab5873afdf529ce92f79188f"
+    },
+    {
+      "testId": "HT14-03",
+      "path": "HT-14/HT14-03-response.png",
+      "view": "response",
+      "captureSavedUtc": "2026-11-21T18:46:38.207Z",
+      "sha256": "984f1eecf89ae76c4ebf9dcda3304e1c45f88ea18d81c564cadc04ee54fb1702"
+    },
+    {
+      "testId": "HT14-04",
+      "path": "HT-14/HT14-04-headers.png",
+      "view": "headers",
+      "captureSavedUtc": "2026-11-21T18:40:01.228Z",
+      "sha256": "bab3d24175306e52ffd5f122cabe5319beb53e92c61b793910a4346640c46b10"
+    },
+    {
+      "testId": "HT14-04",
+      "path": "HT-14/HT14-04-response.png",
+      "view": "response",
+      "captureSavedUtc": "2026-11-21T18:40:09.650Z",
+      "sha256": "7c77b5004f5f82d460f58a10252f31d8ae8137bd22df56b01aeb75bbaf16f885"
+    },
+    {
+      "testId": "HT15-01",
+      "path": "HT-15/HT15-01-headers.png",
+      "view": "headers",
+      "captureSavedUtc": "2026-11-21T18:47:29.634Z",
+      "sha256": "802d8651bdb73bce9e92f6a691d570e92654d5cc4a708f40bec887f241642a08"
+    },
+    {
+      "testId": "HT15-01",
+      "path": "HT-15/HT15-01-response.png",
+      "view": "response",
+      "captureSavedUtc": "2026-11-21T18:49:28.233Z",
+      "sha256": "0ed982643cc25a671044dbe07dcb331d31a20fc72a1e4166e00b3b4b9c768669"
+    },
+    {
+      "testId": "HT15-02",
+      "path": "HT-15/HT15-02-headers.png",
+      "view": "headers",
+      "captureSavedUtc": "2026-11-21T18:47:10.417Z",
+      "sha256": "ab371c6e834321b8ca91aab4ae4c78e795cfb9d21d8848b9831a13f45483d623"
+    },
+    {
+      "testId": "HT15-02",
+      "path": "HT-15/HT15-02-response.png",
+      "view": "response",
+      "captureSavedUtc": "2026-11-21T18:46:56.202Z",
+      "sha256": "20aa294d47cfc17925591eb42182d16a4dfa4a3fdeffe6824e0089f0ddbc0e7a"
+    }
+  ]
+}

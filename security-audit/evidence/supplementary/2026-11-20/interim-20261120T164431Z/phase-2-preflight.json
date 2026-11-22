@@ -1,0 +1,12 @@
+{
+  "recordedUtc": "2026-11-20T16:45:29.7586484+00:00",
+  "applicationProcessId": 35572,
+  "worktree": "C:\\Users\\Бакдаулет\\.codex\\worktrees\\happy-town-audit-test-f23375\\happy-town",
+  "database": "happy_town_audit_test",
+  "databaseHost": "127.0.0.1",
+  "databasePort": "55432",
+  "originalProcessId": 34128,
+  "originalMatchingTables": 32,
+  "testTablesFingerprinted": 32,
+  "testInitialAuditRows": 29
+}

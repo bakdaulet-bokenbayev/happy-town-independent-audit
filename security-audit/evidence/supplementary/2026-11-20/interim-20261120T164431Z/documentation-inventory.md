@@ -1,0 +1,38 @@
+# Phase 1 — Happy Town documentation inventory
+
+**Audit subject:** Happy Town at revision f23375fee54bae8942a1c23a702adb04ed6c99a2  
+**Inventory time:** 2026-11-20 16:44:31 UTC  
+**Scope:** Tracked audit-subject repository and the application-related materials supplied for the academic audit. Documents held outside the supplied materials were unavailable for verification. Formal approval means identifiable evidence of an owner-approved, current controlled document. The lecturer's acceptance of self-review concerns the academic audit arrangement.
+
+## Materials located
+
+| Name or subject | Availability | Formal approval evidence | Related controls and missing information | Source |
+| --- | --- | --- | --- | --- |
+| Application README | Present | No controlled approval evidenced | Local setup, architecture, role summaries and limiter design overview. HT-05 lacks effective protection settings and lockout safeguards. HT-13 lacks complete function and resource rules. | Audited `README.md`, sections First local run, Authentication and authorization, Architecture and Hosted PostgreSQL |
+| Localization and responsive QA notes | Present | No security-policy approval evidenced | Historical testing and UI scope. Leaves authentication configuration and authorization rules outside its purpose. | Audited `I18N_REMAINING.md` |
+| Application source, schema, migrations and seed | Present | Implementation artifacts | Supports control design and mapping for HT-01 through HT-17 where relevant. Field names, migrations and current logic give technical evidence. | Audited `auth.ts`, `lib/auth`, `app/api`, `prisma/` |
+| Stack and deployment configuration | Present | No approved operational baseline supplied | Compose topology and environment template specify local setup. Missing a versioned hardening, secret-rotation and environment-specific configuration baseline. | Audited `docker-compose.yml`, `.env.example`, `next.config.ts`; [audit Compose](../../../../compose.yaml) |
+| CI, build and test materials | Present | No policy approval evidenced | Test scripts and CI checks are useful operational evidence. No controlled test frequency, owner, triage or acceptance procedure supplied. | Audited `.github/workflows/quality.yml`, `scripts/`, `tests/` |
+| Scope, diagrams, cases, findings and execution records | Present | Audit scope was authorized | Academic working papers and evidence. They establish what the auditors examined. The available material gives no auditee approval of those papers as application operating policies. | [Audit plan](../../../../audit-plan/audit-plan.md) · [Application overview](../../../../methodology/application-overview.md) · [Evidence register](../../../evidence-register.md) |
+| Newer production demo runbook | Present outside audited revision | No approval as an audited release baseline evidenced | Narrow later demo-provisioning procedure. Excluded as an auditee policy for the pinned revision. No production connection was used. | Original workspace `docs/production-european-demo.md` at later HEAD |
+
+## Missing or incomplete controlled documentation
+
+| Document or policy | Availability and approval | ASVS case relevance | Specific information missing |
+| --- | --- | --- | --- |
+| System architecture, infrastructure and network diagrams | Partial README and auditor-created diagrams. No formal approved system document supplied. | Environment and trust-boundary context for HT-03, HT-09 and HT-16. | Versioned inventory, trust boundaries, environment ownership and production network controls. |
+| Data-flow and data-classification diagrams | Partial schema, repositories and auditor overview. No approved data-flow document supplied. | Supports scoping for HT-01, HT-15 and HT-17. | Data sources and sinks, sensitivity, storage locations and flows to URL consumers and logging. |
+| Security policy, authentication and credential-abuse policy | Partial README. No complete approved credential-abuse policy supplied. | **HT-05 / HT-F03** documents the concrete gap. **HT-07** tests implementation alignment with the application’s security documentation. | Effective rate-limit configuration, failure scope and recovery, anti-automation and malicious lockout safeguards. |
+| Access control policy and role/permission matrix | Partial role summary. No complete approved rules supplied. | **HT-13 / HT-F04** documents the concrete gap. HT-14 through HT-16 assess enforcement separately. | Role-to-function permissions, active or archived relationships, permissions by record state and denial rules. |
+| Session management and revocation procedure | Implementation source and audit notes present. No controlled session lifecycle procedure supplied. | HT-09 through HT-12 assess technical behavior. HT-11 does not expressly require policy documentation. | Distinguish independent sessions from replacement, identify supported reauthentication transitions and specify logout and revocation expectations. |
+| Secure configuration baseline | Setup and runtime settings available. No approved security configuration baseline supplied. | HT-07 relies on relevant credential-abuse documentation. The criterion does not expressly require a separate approval artifact. | Effective settings per environment, owner, review and allowed deviations. |
+| Logging and monitoring procedure | README mentions audit events. No approved procedure supplied. | Relevant to HT-05 and conditional retention consequences under HT-17. | Event ownership, retention, alert review, redaction and what systems record full request URLs. |
+| Backup and recovery | Docker volume notes and local reset commands. No approved backup/restore procedure supplied. | General operational gap beyond the selected criteria. | Backup schedule, retention, recovery objectives, restoration tests and ownership. |
+| Incident response procedure | No supplied controlled procedure. | General operational gap beyond the selected criteria. | Reporting and escalation contacts, containment, response and evidence handling. |
+| Data retention, deletion and personal data protection | Archive/restore implementation and schema present. No approved supporting policies supplied. | Relevant context for HT-13 and HT-17. Formal retention and privacy governance exceed this sample. | Retention periods, deletion rules, handling requests, ownership and review. |
+| Security testing, patching and maintenance procedures | CI and audit test plan present. No controlled auditee procedure supplied. | General operating assurance. The guide can support future verification of HT-07 and other controls. | Review cadence, patch ownership, exception processing and verification records. |
+| Operational runbook and security administration procedures | Partial local README and a later demo runbook. No approved comprehensive audited runbook supplied. | General operational context. | Access lifecycle, support responsibilities, deployment and rollback, change authorization and periodic reviews. |
+
+The selected documentation criteria are HT-05 and HT-13, and their gaps already map to HT-F03 and HT-F04. HT-07 references application documentation for its implementation comparison and shares the HT-F03 document gap. The other inventory gaps support discussion of operational assurance and audit limitations. They require an applicable criterion and evidence of nonconformity before they can be counted as additional ASVS failures.
+
+[Official ASVS 5.0.0 release](https://asvs.owasp.org/downloads/) · [Existing documentation reassessment](../../../reassessment/2026-11-19-documentation-review.md) · [Verified inventory metadata](phase-1-inventory.json)

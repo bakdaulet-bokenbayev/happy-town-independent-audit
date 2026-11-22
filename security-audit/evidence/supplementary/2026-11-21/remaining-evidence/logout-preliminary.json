@@ -1,0 +1,60 @@
+{
+  "revision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "origin": "http://127.0.0.1:3302",
+  "environment": "happy_town_audit_test",
+  "startedUtc": "2026-11-21T20:11:53.415Z",
+  "events": [
+    {
+      "id": "RV-HT12-05",
+      "testId": "HT-12",
+      "context": "Single browser",
+      "timestampUtc": "2026-11-21T20:11:56.061Z",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "status": 200,
+      "callbackReturnedError": false
+    },
+    {
+      "id": "RV-HT12-06",
+      "testId": "HT-12",
+      "context": "Single browser",
+      "timestampUtc": "2026-11-21T20:11:56.951Z",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "status": 200,
+      "protectedContentRendered": true,
+      "finalPath": "/teacher"
+    },
+    {
+      "id": "RV-HT12-07",
+      "testId": "HT-12",
+      "context": "Single browser",
+      "timestampUtc": "2026-11-21T20:11:57.403Z",
+      "method": "POST",
+      "endpoint": "/api/auth/signout",
+      "status": 200
+    }
+  ],
+  "screenshots": [],
+  "databasePreflight": {
+    "database": "happy_town_audit_test",
+    "auditEventCount": 74
+  },
+  "browserVersion": "157.0.8103.79",
+  "playwrightVersion": "1.62.1",
+  "databasePostflight": {
+    "database": "happy_town_audit_test",
+    "auditEventCount": 75,
+    "changeInAuditEventCount": 1,
+    "authenticationEventsDuringRun": [
+      {
+        "action": "LOGIN",
+        "result": "SUCCESS",
+        "count": 1
+      }
+    ]
+  },
+  "finishedUtc": "2026-11-21T20:11:58.942Z",
+  "failedAt": "HT-12 logout confirmation",
+  "completed": false
+}

@@ -1,0 +1,30 @@
+{
+  "observedAtUtc": "2026-11-20T18:05:55.019047+01:00",
+  "preflight": {
+    "recordedUtc": "2026-11-20T17:04:29.1461090+00:00",
+    "revision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+    "worktree": "C:\\Users\\Бакдаулет\\.codex\\worktrees\\happy-town-audit-test-f23375\\happy-town",
+    "worktreeClean": true,
+    "testDatabase": "happy_town_audit_test",
+    "dbHost": "127.0.0.1",
+    "dbPort": 55432,
+    "appProcessByPort": {
+      "3301": 34128,
+      "3302": 35572,
+      "3300": 6612
+    },
+    "originalTablesFingerprinted": 32,
+    "testTablesFingerprinted": 32,
+    "cloneAuditLogRowsBefore": 34,
+    "existingAuditFilesFingerprinted": 110
+  },
+  "originalTablesUnchanged": 32,
+  "isolatedTablesUnchanged": 31,
+  "isolatedChangedTable": "audit_logs",
+  "isolatedAuditLogRowsAfter": 35,
+  "existingAuditRowsUnchanged": true,
+  "onlyNewDatabaseEvent": "LOGIN|Authentication|TEACHER|SUCCESS",
+  "allThreeApplicationListenersUnchanged": true,
+  "auditedWorktreeClean": true,
+  "existingAuditFilesUnchanged": 110
+}

@@ -1,0 +1,95 @@
+{
+  "auditRevision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "origin": "http://127.0.0.1:3302",
+  "browserVersion": "157.0.8103.79",
+  "captureType": "Playwright-driven Google Chrome HTTP observations",
+  "nativeDevToolsScreenshotCount": 0,
+  "authControls": [
+    {
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "role": "TEACHER",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "role": "TEACHER"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "role": "PARENT",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "role": "PARENT"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "role": "ADMIN",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "role": "ADMIN"
+    }
+  ],
+  "checks": [
+    {
+      "id": "HT14-01",
+      "role": "ADMIN",
+      "fixture": null,
+      "method": "GET",
+      "endpoint": "/api/admin/entities?kind=teachers",
+      "timestampUtc": "2026-11-21T17:39:00.897Z",
+      "status": 200,
+      "hasManagementItems": true,
+      "hasStudentRecord": false,
+      "studentIdentityMatches": null
+    },
+    {
+      "id": "HT14-02",
+      "role": "TEACHER",
+      "fixture": null,
+      "method": "GET",
+      "endpoint": "/api/admin/entities?kind=teachers",
+      "timestampUtc": "2026-11-21T17:35:01.752Z",
+      "status": 403,
+      "hasManagementItems": false,
+      "hasStudentRecord": false,
+      "studentIdentityMatches": null
+    },
+    {
+      "id": "HT14-03",
+      "role": "PARENT",
+      "fixture": null,
+      "method": "GET",
+      "endpoint": "/api/admin/entities?kind=teachers",
+      "timestampUtc": "2026-11-21T17:38:56.789Z",
+      "status": 403,
+      "hasManagementItems": false,
+      "hasStudentRecord": false,
+      "studentIdentityMatches": null
+    },
+    {
+      "id": "HT14-04",
+      "role": "ANONYMOUS",
+      "fixture": null,
+      "method": "GET",
+      "endpoint": "/api/admin/entities?kind=teachers",
+      "timestampUtc": "2026-11-21T17:34:56.433Z",
+      "status": 401,
+      "hasManagementItems": false,
+      "hasStudentRecord": false,
+      "studentIdentityMatches": null
+    }
+  ]
+}

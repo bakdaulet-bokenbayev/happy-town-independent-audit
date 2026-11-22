@@ -1,0 +1,104 @@
+{
+  "test": "HT-11",
+  "asvs": "v5.0.0-7.2.4",
+  "revision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "database": "happy_town_audit_test",
+  "origin": "http://127.0.0.1:3302",
+  "account": "TEACHER-A",
+  "language": "en",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "method": "Two successful Credentials authentications in one uninterrupted browser context",
+  "events": [
+    {
+      "action": "Initial Credentials authentication",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "status": 200,
+      "timestampUtc": "2026-11-20T19:01:36.464Z"
+    },
+    {
+      "action": "Initial authenticated identity",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "authenticatedUserReturned": true,
+      "matchesTeacherA": true,
+      "role": "TEACHER",
+      "timestampUtc": "2026-11-20T19:01:36.858Z"
+    },
+    {
+      "action": "Protected dashboard before second authentication",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "status": 200,
+      "reachedTeacher": true,
+      "timestampUtc": "2026-11-20T19:01:37.163Z"
+    },
+    {
+      "action": "Standard CSRF challenge during active session",
+      "method": "GET",
+      "endpoint": "/api/auth/csrf",
+      "status": 200,
+      "receivedChallenge": true,
+      "timestampUtc": "2026-11-20T19:01:37.714Z"
+    },
+    {
+      "action": "Second Credentials authentication in the same active context",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "status": 200,
+      "timestampUtc": "2026-11-20T19:01:38.105Z",
+      "redirectReturned": true,
+      "callbackErrorReported": false,
+      "redirectOriginClass": "local hostname alias"
+    },
+    {
+      "action": "Protected dashboard after second authentication",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "status": 200,
+      "reachedTeacher": true,
+      "timestampUtc": "2026-11-20T19:01:38.440Z"
+    },
+    {
+      "action": "Authenticated identity after second authentication",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "authenticatedUserReturned": true,
+      "matchesTeacherA": true,
+      "role": "TEACHER",
+      "timestampUtc": "2026-11-20T19:01:38.791Z"
+    }
+  ],
+  "screenshots": [
+    {
+      "action": "Initially authenticated dashboard",
+      "filename": "HT11-initial-dashboard.png",
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "timestampUtc": "2026-11-20T19:01:37.653Z"
+    },
+    {
+      "action": "Authenticated dashboard after second callback",
+      "filename": "HT11-post-reauth-dashboard.png",
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "timestampUtc": "2026-11-20T19:01:38.891Z"
+    }
+  ],
+  "priorSessionControlPerformed": false,
+  "previousSessionTestPerformed": false,
+  "credentialValuesInspected": false,
+  "tokenFingerprintsRecorded": false,
+  "browserVersion": "157.0.8103.79",
+  "sameContextSecondCallbackCompleted": true,
+  "accountIdMatchedBeforeAndAfter": true
+}

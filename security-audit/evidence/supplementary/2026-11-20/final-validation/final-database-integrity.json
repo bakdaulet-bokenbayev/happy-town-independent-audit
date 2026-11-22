@@ -1,0 +1,22 @@
+{
+  "verifiedUtc": "2026-11-20T15:59:11.5971083+00:00",
+  "auditedRevision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "cleanWorktree": true,
+  "originalProcessId": 34128,
+  "testProcessId": 35572,
+  "originalTablesUnchanged": 32,
+  "testTablesUnchanged": 31,
+  "testOnlyChangedTable": "audit_logs",
+  "existingTestAuditRowsUnchanged": true,
+  "testAuditRowsBefore": 28,
+  "testAuditRowsAfter": 29,
+  "newAuditEntries": [
+    {
+      "timeUtc": "2026-11-20T15:58:05.405Z",
+      "action": "LOGIN",
+      "entity": "Authentication",
+      "role": "ADMIN",
+      "result": "SUCCESS"
+    }
+  ]
+}

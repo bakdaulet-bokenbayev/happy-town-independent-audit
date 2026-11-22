@@ -1,0 +1,44 @@
+{
+  "matrix": {
+    "Pass": 11,
+    "Fail": 4,
+    "Inconclusive": 2
+  },
+  "matrixRequirementCount": 17,
+  "riskRatings": {
+    "HT-12": "Medium",
+    "HT-17": "Low",
+    "HT-05": "Low",
+    "HT-13": "Low"
+  },
+  "a4ReportPages": 17,
+  "embeddedImagesByPage": {
+    "7": 4,
+    "9": 1
+  },
+  "reportSha256": "65f890e4e8e0eb3621a5d93e09c8a87ca00fdc0ff8c21d11a5944b7add09d46f",
+  "presentationSlides": 13,
+  "presentationSha256": "75315aaebadd5be4d06ab68021c5c1a7e1ba1f34c8721728320019b39b0319c8",
+  "slideTitles": [
+    "Óbuda University Security Audit of a Self-Hosted Web Application Happy Town OWASP ASVS 5.0.0  /",
+    "Happy Town at a glance Electronic diary and management platform for an English-language learnin",
+    "Audit objective and scope Evaluate how selected controls protect accounts, sessions and access ",
+    "Audit standard OWASP Application Security Verification Standard Security requirements for verif",
+    "Audit plan and methodology 1 Audit planning 2 Scope definition 3 ASVS requirement selection 4 E",
+    "Tools and testing environment 127.0.0.1:3300  •  One audited revision  •  Synthetic fixtures No",
+    "Testing and evidence HT-14 · Function-level access TEACHER → admin list: HTTP 403, no items ADM",
+    "Verification results 17 cases with fieldwork HT-05 and HT-13 moved from Inconclusive to Fail. P",
+    "Technical findings HT-F01  /  HT-12  /  v5.0.0-7.4.1 Logout lacks server-side JWT invalidation ",
+    "Documentation findings HT-F03  /  HT-05  /  v5.0.0-6.1.1 Credential-abuse protection policy LOW",
+    "Risk assessment Likelihood / Impact Low Medium High Low Low Low · HT-F04 Medium · HT-F01 Medium",
+    "Corrective actions Proposed actions  /  All four findings remain open Control area Proposed act",
+    "Conclusion WHAT THE EVIDENCE SUPPORTED Sampled server-side validation and role and record check"
+  ],
+  "checkedLocalLinkTargets": 118,
+  "priorImageHashesChecked": {
+    "playwright-observations.json": 1,
+    "clone-browser-observations.json": 10,
+    "access-control-http.json": 8,
+    "remaining-checks-observations.json": 2
+  }
+}

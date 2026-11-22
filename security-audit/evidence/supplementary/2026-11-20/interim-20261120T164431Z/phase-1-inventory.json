@@ -1,0 +1,15 @@
+{
+  "observedAtUtc": "2026-11-20T16:44:31.5510077+00:00",
+  "auditedGitRevision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "trackedPaths": 187,
+  "preExistingAuditFiles": 98,
+  "existingScreenshotFiles": 31,
+  "officialRequirementRowsVerified": 17,
+  "officialReleaseCsvSha256": "98c8fe911b9edb403af8ee05d3ce8201ecac2659e313b053890a62847cdcf680",
+  "documentPaths": [
+    "I18N_REMAINING.md",
+    "README.md"
+  ],
+  "runtimeOrigin": "http://127.0.0.1:3302",
+  "worktreeClean": true
+}

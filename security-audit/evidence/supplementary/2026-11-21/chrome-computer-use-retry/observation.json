@@ -1,0 +1,34 @@
+{
+  "evidenceId": "FDV-CUA-SESSION-01",
+  "date": "2026-11-21",
+  "scenario": "Anonymous session baseline",
+  "target": "http://127.0.0.1:3302",
+  "auditedRevision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "browser": "Google Chrome 157.0.8103.79",
+  "context": "Incognito, no sign-in",
+  "method": "GET",
+  "endpoint": "/api/auth/session",
+  "expected": "No authenticated user",
+  "status": 200,
+  "responseBody": null,
+  "captures": {
+    "headers": {
+      "capturedUtc": "2026-11-21T21:02:40+00:00",
+      "capturedCET": "2026-11-21T22:02:40+01:00",
+      "original": "originals/FDV-CUA-SESSION-01-headers.png",
+      "originalSha256": "75e85c4a85753a481b6d418d8dbf0dd118cc8de0abe47a00b4d1b6513e4bae55",
+      "submission": "submission/FDV-CUA-SESSION-01-headers-chrome-window.png",
+      "submissionSha256": "9f2dc40bf165fcb8500dc1d2bed7329cf20a55b16cc20a9105939e6662423066"
+    },
+    "response": {
+      "capturedUtc": "2026-11-21T21:03:26+00:00",
+      "capturedCET": "2026-11-21T22:03:26+01:00",
+      "original": "originals/FDV-CUA-SESSION-01-response.png",
+      "originalSha256": "27ee9e771f3c5db83adf8b5f980aa24c9dc1d98cf6bfa23f4a1bafeab1f1fef8",
+      "submission": "submission/FDV-CUA-SESSION-01-response-chrome-window.png",
+      "submissionSha256": "bec205f5800dc0b4f77d3c60897f20ce05840e50c746810b66f9f5a9a1939fa6"
+    }
+  },
+  "captureNotes": "Windows screen capture of native Chrome DevTools. Original captures are unchanged. Copies for submission omit the Windows taskbar and outer screen border.",
+  "determination": "Anonymous session baseline observed. This does not measure live limiting, replacement or logout invalidation."
+}

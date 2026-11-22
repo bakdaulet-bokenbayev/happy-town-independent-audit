@@ -1,0 +1,14 @@
+✔ HT-11 consumes the application identity mapping for two successive sign-ins (60.9249ms)
+✔ HT-11 denies a request when the trusted session boundary returns no current identity (27.0915ms)
+✔ Session guards reject an unavailable account on a fresh account lookup (27.1121ms)
+✔ HT-12 installed Auth.js sign-out calls cleanup and the app guard denies a signed-out request (39.4082ms)
+✔ HT-11 server-side invalidation of the earlier session after re-authentication remains unverified (0.4425ms) # TODO
+✔ HT-12 server-side invalidation of the earlier session after logout remains unverified (0.2379ms) # TODO
+ℹ tests 6
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 2
+ℹ duration_ms 1131.1399

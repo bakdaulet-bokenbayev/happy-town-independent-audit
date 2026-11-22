@@ -1,0 +1,9 @@
+Pattern: \bjti\b|\brevok(e|ed|ing|ation)\b|token.?version|session.?version|issued.?at|valid.?after|last.?login|session.?(record|registry|regist)|denylist|blacklist|security.?stamp
+
+Application source | git grep -i -l -E (exit 1)
+Scope: auth.ts, lib, app, worker, types, next.config.ts
+No matching file paths.
+
+Tracked schema and DDL | git grep -i -l -E (exit 1)
+Scope: prisma/schema.prisma, prisma/migrations, db
+No matching file paths.

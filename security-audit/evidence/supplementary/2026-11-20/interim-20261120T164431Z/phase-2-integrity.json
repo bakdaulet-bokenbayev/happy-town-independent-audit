@@ -1,0 +1,27 @@
+{
+  "timestampUtc": "2026-11-20T16:49:11.1708480+00:00",
+  "originalTablesUnchanged": 32,
+  "cloneTablesUnchanged": 31,
+  "cloneOnlyChangedTable": "audit_logs",
+  "cloneAuditLogRowsBefore": 29,
+  "cloneAuditLogRowsAfter": 34,
+  "authenticationWrites": [
+    {
+      "event": "LOGIN|Authentication|ADMIN|SUCCESS",
+      "count": 1
+    },
+    {
+      "event": "LOGIN|Authentication|PARENT|SUCCESS",
+      "count": 2
+    },
+    {
+      "event": "LOGIN|Authentication|TEACHER|SUCCESS",
+      "count": 2
+    }
+  ],
+  "temporaryParentCredentialFieldsRestored": true,
+  "originalApplicationPid": 34128,
+  "isolatedApplicationPid": 35572,
+  "auditedRevision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "worktreeClean": true
+}

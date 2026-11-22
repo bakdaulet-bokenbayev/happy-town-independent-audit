@@ -1,0 +1,22 @@
+HT-11 canonical amendment validation
+Audited revision  f23375fee54bae8942a1c23a702adb04ed6c99a2
+
+PASS  Three canonical files match the amended snapshots.
+PASS  17 ASVS requirements, with 11 Pass, 5 Fail and 1 Inconclusive.
+PASS  HT-11 is Fail. HT-07 is the only Inconclusive requirement.
+PASS  HT-11 Dynamic Replay Test is Inconclusive.
+PASS  HT-11 changed only Current Status and Evidence Reference in the matrix.
+PASS  Four registered findings. HT-F01 still covers HT-12 and retains Medium risk.
+PASS  All 25 matrix evidence references resolve.
+PASS  78 Markdown links and anchors verified in the amended files.
+PASS  Historical fieldwork totals remain 11 Pass, 2 Fail and 4 Inconclusive.
+PASS  Established source revision and clean audited worktree verified.
+PASS  PDF, PPTX and findings register hashes match the pre-amendment baseline.
+PASS  The two preserved HT-11 dynamic evidence manifests verify.
+PASS  git diff --check reported no diagnostics in the canonical worktree.
+PASS  git diff --no-index --check found no whitespace diagnostics in the three amended files.
+
+No unresolved local Markdown references were found.
+
+The canonical audit files are untracked in this repository. The scoped comparison
+uses byte-for-byte before and after copies of just the three amended files.

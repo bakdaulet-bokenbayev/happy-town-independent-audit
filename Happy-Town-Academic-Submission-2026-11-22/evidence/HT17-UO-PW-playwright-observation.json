@@ -1,0 +1,19 @@
+{
+  "state": "observed",
+  "testId": "HT-17",
+  "browser": "157.0.8103.79",
+  "method": "GET",
+  "url": "http://127.0.0.1:3302/api/admin/entities?kind=teachers&query=audit-teacher%40example.test&status=active&sort=newest&page=1&pageSize=8",
+  "status": 200,
+  "requestTimestampUtc": "2026-11-22T07:58:12.242Z",
+  "observedAtUtc": "2026-11-22T07:58:12.397Z",
+  "returnedItemCount": 1,
+  "syntheticMatch": true,
+  "responseTopLevelKeys": [
+    "ok",
+    "items",
+    "total",
+    "page",
+    "pageSize"
+  ]
+}

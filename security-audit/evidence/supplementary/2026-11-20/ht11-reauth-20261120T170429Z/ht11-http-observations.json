@@ -1,0 +1,178 @@
+{
+  "origin": "http://127.0.0.1:3302",
+  "engine": "Playwright 1.62.1",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "events": [
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/login",
+      "timestampUtc": "2026-11-20T17:05:11.376Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/login",
+      "timestampUtc": "2026-11-20T17:05:11.439Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "timestampUtc": "2026-11-20T17:05:12.507Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "timestampUtc": "2026-11-20T17:05:12.912Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T17:05:12.913Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T17:05:12.930Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "timestampUtc": "2026-11-20T17:05:13.130Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "timestampUtc": "2026-11-20T17:05:13.386Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/login",
+      "timestampUtc": "2026-11-20T17:05:14.428Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/login",
+      "timestampUtc": "2026-11-20T17:05:14.529Z",
+      "status": 307
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "timestampUtc": "2026-11-20T17:05:14.530Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "timestampUtc": "2026-11-20T17:05:14.687Z",
+      "status": 200
+    },
+    {
+      "event": "request",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T17:05:14.864Z"
+    },
+    {
+      "event": "response",
+      "roleContext": "TEACHER",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "timestampUtc": "2026-11-20T17:05:14.916Z",
+      "status": 200
+    }
+  ],
+  "screenshots": [
+    {
+      "evidenceId": "HT11-RA-01",
+      "testId": "HT-11",
+      "label": "Initial authenticated Teacher Dashboard before the navigation check",
+      "filename": "HT11-INITIAL-TEACHER-DASHBOARD.png",
+      "timestampUtc": "2026-11-20T17:05:14.417Z",
+      "sha256": "6069698321807316ac36482d2a3e643c0da7b1446cb1a3283608b604355d7531",
+      "viewport": [
+        1440,
+        1000
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "label": "Ordinary sign-in",
+      "role": "TEACHER",
+      "callbackStatus": 200,
+      "sessionStatus": 200,
+      "authenticatedRole": "TEACHER"
+    },
+    {
+      "case": "Initial protected teacher page",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "status": 200,
+      "teacherDashboardVisible": true,
+      "timestampUtc": "2026-11-20T17:05:14.262Z"
+    },
+    {
+      "case": "Open login page while already authenticated",
+      "method": "GET",
+      "endpoint": "/login",
+      "status": 307,
+      "timestampUtc": "2026-11-20T17:05:14.529Z",
+      "redirectPath": "/teacher",
+      "landingStatus": 200,
+      "landedAtProtectedTeacherPage": true,
+      "loginFormVisible": false,
+      "newCredentialsSubmission": false
+    },
+    {
+      "case": "Session read after authenticated login-page navigation",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "authenticatedRole": "TEACHER",
+      "matchedTeacherFixture": true,
+      "timestampUtc": "2026-11-20T17:05:14.938Z"
+    }
+  ],
+  "auditCase": "HT-11",
+  "revision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "database": "happy_town_audit_test",
+  "chromium": "157.0.8103.79",
+  "coverage": {
+    "initialAuthentication": true,
+    "sessionCookieValuesAccessed": false,
+    "priorTokenReplayPerformed": false,
+    "secondAuthenticationPerformed": false,
+    "sessionTerminationObserved": false
+  }
+}

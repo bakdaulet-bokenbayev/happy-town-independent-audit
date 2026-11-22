@@ -1,0 +1,9 @@
+{
+  "recordedAtUtc": "2026-11-20T17:06:51.2010949+00:00",
+  "caseId": "HT-11",
+  "hashAlgorithmUsed": null,
+  "sessionACollected": false,
+  "sessionBCollected": false,
+  "tokenFingerprintsCollected": false,
+  "reason": "No cookies were read or transferred and no supported re-authentication transition was exercised."
+}

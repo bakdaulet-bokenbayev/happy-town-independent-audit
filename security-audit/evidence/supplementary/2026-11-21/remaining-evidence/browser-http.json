@@ -1,0 +1,151 @@
+{
+  "revision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "origin": "http://127.0.0.1:3302",
+  "environment": "happy_town_audit_test",
+  "startedUtc": "2026-11-21T20:11:03.540Z",
+  "events": [
+    {
+      "id": "RV-HT07-01",
+      "testId": "HT-07",
+      "context": "Rejected-input sample",
+      "timestampUtc": "2026-11-21T20:11:06.636Z",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "status": 200,
+      "callbackReturnedError": true
+    },
+    {
+      "id": "RV-HT07-02",
+      "testId": "HT-07",
+      "context": "Rejected-input sample",
+      "timestampUtc": "2026-11-21T20:11:06.671Z",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "authenticatedUserReturned": false,
+      "role": null
+    },
+    {
+      "id": "RV-HT11-01",
+      "testId": "HT-11",
+      "context": "A",
+      "timestampUtc": "2026-11-21T20:11:08.737Z",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "status": 200,
+      "callbackReturnedError": false
+    },
+    {
+      "id": "RV-HT11-02",
+      "testId": "HT-11",
+      "context": "A",
+      "timestampUtc": "2026-11-21T20:11:09.993Z",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "status": 200,
+      "protectedContentRendered": true,
+      "finalPath": "/teacher"
+    },
+    {
+      "id": "RV-HT11-03",
+      "testId": "HT-11",
+      "context": "A",
+      "timestampUtc": "2026-11-21T20:11:10.418Z",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "authenticatedUserReturned": true,
+      "role": "TEACHER"
+    },
+    {
+      "id": "RV-HT11-04",
+      "testId": "HT-11",
+      "context": "B",
+      "timestampUtc": "2026-11-21T20:11:12.264Z",
+      "method": "POST",
+      "endpoint": "/api/auth/callback/credentials",
+      "status": 200,
+      "callbackReturnedError": false
+    },
+    {
+      "id": "RV-HT11-05",
+      "testId": "HT-11",
+      "context": "B",
+      "timestampUtc": "2026-11-21T20:11:12.753Z",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "authenticatedUserReturned": true,
+      "role": "TEACHER"
+    },
+    {
+      "id": "RV-HT11-06",
+      "testId": "HT-11",
+      "context": "A after B signs in",
+      "timestampUtc": "2026-11-21T20:11:13.238Z",
+      "method": "GET",
+      "endpoint": "/teacher",
+      "status": 200,
+      "protectedContentRendered": true,
+      "finalPath": "/teacher"
+    },
+    {
+      "id": "RV-HT11-07",
+      "testId": "HT-11",
+      "context": "A after B signs in",
+      "timestampUtc": "2026-11-21T20:11:13.351Z",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "authenticatedUserReturned": true,
+      "role": "TEACHER"
+    },
+    {
+      "id": "RV-HT12-01",
+      "testId": "HT-12",
+      "context": "A",
+      "timestampUtc": "2026-11-21T20:11:13.784Z",
+      "method": "POST",
+      "endpoint": "/api/auth/signout",
+      "status": 200
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "RV-HT11-08",
+      "testId": "HT-11",
+      "timestampUtc": "2026-11-21T20:11:13.541Z",
+      "filename": "RV-HT11-08.png",
+      "type": "Playwright page screenshot",
+      "sha256": "e2b5d6284b1ceaa415ef7dc7df04b20cfd7b1623f59ab701b6d6620b23b1ec77"
+    }
+  ],
+  "databasePreflight": {
+    "database": "happy_town_audit_test",
+    "auditEventCount": 71
+  },
+  "browserVersion": "157.0.8103.79",
+  "playwrightVersion": "1.62.1",
+  "contextsMatchedSameAccount": true,
+  "contextAStillMatchedAccount": true,
+  "databasePostflight": {
+    "database": "happy_town_audit_test",
+    "auditEventCount": 74,
+    "changeInAuditEventCount": 3,
+    "authenticationEventsDuringRun": [
+      {
+        "action": "LOGIN",
+        "result": "SUCCESS",
+        "count": 2
+      },
+      {
+        "action": "LOGIN_FAILED",
+        "result": "INVALID_CREDENTIALS",
+        "count": 1
+      }
+    ]
+  },
+  "finishedUtc": "2026-11-21T20:11:14.941Z",
+  "failedAt": "HT-12 ordinary sign-out in Context A",
+  "completed": false
+}

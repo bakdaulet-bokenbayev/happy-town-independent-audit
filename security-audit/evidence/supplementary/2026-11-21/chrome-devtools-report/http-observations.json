@@ -1,0 +1,81 @@
+{
+  "evidenceDate": "2026-11-21",
+  "localTimezone": "Europe/Budapest",
+  "origin": "http://127.0.0.1:3302",
+  "browser": "Google Chrome 157.0.8103.79",
+  "auditedRevision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "captures": [
+    {
+      "testId": "HT-14",
+      "image": "HT14-chrome-devtools.png",
+      "capturedUtc": "2026-11-20T23:17:41.194Z",
+      "sha256": "a3f5f771deb3a51762773981e543d2648672636c1d14e3a909e53235900e29d3",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "status": 200,
+      "role": "ADMIN",
+      "sample": "Ordinary Teachers page, kind=teachers and empty query",
+      "separateSamePageResponse": {
+        "time": "2026-11-20T23:13:41.510Z",
+        "role": "ADMIN",
+        "method": "GET",
+        "endpoint": "/api/admin/entities",
+        "status": 200,
+        "queryKeys": [
+          "kind",
+          "query",
+          "status",
+          "sort",
+          "page",
+          "pageSize"
+        ],
+        "items": 4,
+        "fixtureMatched": null
+      },
+      "denialRequestsRepeated": false
+    },
+    {
+      "testId": "HT-12",
+      "image": "HT12-chrome-devtools.png",
+      "capturedUtc": "2026-11-20T23:21:26.278Z",
+      "sha256": "b08dbccf999d7142b75f57666a076e3763a2967730c2763e022610e4c0698add",
+      "method": "GET",
+      "endpoint": "/api/auth/session",
+      "status": 200,
+      "roleBeforeSignOut": "TEACHER",
+      "responseBody": null,
+      "authenticatedUserReturned": false,
+      "redirectObservedUtc": "2026-11-20T23:19:41.507Z",
+      "statusImage": "HT12-chrome-status.png",
+      "previousTokenReplayPerformed": false
+    },
+    {
+      "testId": "HT-17",
+      "image": "HT17-chrome-devtools.png",
+      "capturedUtc": "2026-11-20T23:17:18.719Z",
+      "sha256": "a14992446d76bdf8900e5bfdf2be4a41d65ccc7e8ff9f043df914f9b01eb576c",
+      "method": "GET",
+      "endpoint": "/api/admin/entities",
+      "status": 200,
+      "role": "ADMIN",
+      "query": "Synthetic email in query; local part redacted",
+      "correlatedBrowserResponse": {
+        "time": "2026-11-20T23:15:00.607Z",
+        "role": "ADMIN",
+        "method": "GET",
+        "endpoint": "/api/admin/entities",
+        "status": 200,
+        "queryKeys": [
+          "kind",
+          "query",
+          "status",
+          "sort",
+          "page",
+          "pageSize"
+        ],
+        "items": 1,
+        "fixtureMatched": true
+      }
+    }
+  ]
+}

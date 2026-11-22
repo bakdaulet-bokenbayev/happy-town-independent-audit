@@ -1,0 +1,13 @@
+{
+  "evidenceId": "FDV-ENV-01",
+  "recordedUtc": "2026-11-21T20:49:13.1926317+00:00",
+  "revision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "auditedWorktreeClean": true,
+  "server": "http://127.0.0.1:3302",
+  "listenerPid": 35572,
+  "listenerStartUtc": "2026-11-20T15:12:35.4230570Z",
+  "matchedRetainedProcessAttestation": true,
+  "database": "happy_town_audit_test",
+  "databaseTransactionReadOnly": true,
+  "productionContacted": false
+}

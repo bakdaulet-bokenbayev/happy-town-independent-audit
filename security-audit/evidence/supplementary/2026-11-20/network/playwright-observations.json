@@ -1,0 +1,27 @@
+{
+  "evidenceId": "PW-LOGIN-01",
+  "auditCase": "Environment readiness",
+  "browser": "Playwright 1.62.1 with isolated Chromium (Google Chrome)",
+  "chromiumVersion": "157.0.8103.79",
+  "origin": "http://127.0.0.1:3301",
+  "authenticatedRole": null,
+  "responseBehavior": "English sign-in form displayed with empty fields, a masked password input and Sign in button. No credentials submitted.",
+  "events": [
+    {
+      "event": "request",
+      "method": "GET",
+      "endpoint": "/login",
+      "timeUtc": "2026-11-20T15:03:50.345Z"
+    },
+    {
+      "event": "response",
+      "method": "GET",
+      "endpoint": "/login",
+      "status": 200,
+      "timeUtc": "2026-11-20T15:03:50.408Z"
+    }
+  ],
+  "capturedAtUtc": "2026-11-20T15:03:51.467Z",
+  "screenshot": "PW-LOGIN-01-english-login.png",
+  "sha256": "350f67eba55ece64d3abcafceaa33a0f095ff087fb0547b3285eec3eeba2a5c9"
+}

@@ -1,0 +1,23 @@
+{
+  "revision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "origin": "http://127.0.0.1:3302",
+  "environment": "happy_town_audit_test",
+  "startedUtc": "2026-11-21T20:09:44.485Z",
+  "events": [],
+  "screenshots": [],
+  "databasePreflight": {
+    "database": "happy_town_audit_test",
+    "auditEventCount": 71
+  },
+  "browserVersion": "157.0.8103.79",
+  "playwrightVersion": "1.62.1",
+  "databasePostflight": {
+    "database": "happy_town_audit_test",
+    "auditEventCount": 71,
+    "changeInAuditEventCount": 0,
+    "authenticationEventsDuringRun": []
+  },
+  "finishedUtc": "2026-11-21T20:10:16.749Z",
+  "failedAt": "HT-07 ordinary rejected input",
+  "completed": false
+}

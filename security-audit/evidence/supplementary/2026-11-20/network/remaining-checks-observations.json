@@ -1,0 +1,106 @@
+{
+  "scope": "Read-only follow-up. No new browser requests, authentication attempts or screenshots.",
+  "integrity": {
+    "fixtureCheck": {
+      "observedAtUtc": "2026-11-20T15:37:31.151Z",
+      "database": "happy_town_audit_test",
+      "transactionReadOnly": true,
+      "parentFixture": "PARENT-C",
+      "parentStatus": "ACTIVE",
+      "parentNotArchived": true,
+      "hasLoginIin": false,
+      "hasPasswordHash": false,
+      "activeFixtureRelationship": true,
+      "activeSyntheticTeacherContactCount": 1,
+      "currentAuditLogCount": 28
+    },
+    "parentConfigKeyNames": [
+      "SEED_PARENT_EMAIL",
+      "SEED_PARENT_IIN",
+      "SEED_PARENT_PASSWORD"
+    ],
+    "originalTablesMatchedBaseline": 32,
+    "cloneTablesUnchanged": 32,
+    "testDatabaseWrites": 0,
+    "sourceDatabaseWrites": 0,
+    "auditedRevision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+    "originalPid": 34128,
+    "testPid": 35572,
+    "sourceClean": true
+  },
+  "priorHttpEvidence": [
+    {
+      "test": "HT-17",
+      "source": "../../../phase-3/observations.json#http.requestLocations.syntheticContactSearch",
+      "runStartedUtc": "2026-11-19T10:42:49.702Z",
+      "runFinishedUtc": "2026-11-19T10:42:58.247Z",
+      "individualRequestTimestampRetained": false,
+      "observation": {
+        "method": "GET",
+        "path": "/api/admin/entities",
+        "fields": [
+          "kind",
+          "query"
+        ],
+        "status": 200,
+        "syntheticEmailWasInUrl": true,
+        "matchedFixture": true
+      }
+    },
+    {
+      "test": "HT-17",
+      "source": "clone-browser-observations.json",
+      "observation": {
+        "test": "HT-17",
+        "case": "Ordinary text filter only",
+        "method": "GET",
+        "endpoint": "/api/admin/entities",
+        "role": "ADMIN",
+        "status": 200,
+        "queryFields": [
+          "kind",
+          "query",
+          "status",
+          "sort",
+          "page",
+          "pageSize"
+        ],
+        "nonEmailFilterPresent": true,
+        "itemsReturned": true
+      }
+    },
+    {
+      "test": "HT-12",
+      "source": "clone-browser-observations.json",
+      "observation": {
+        "test": "HT-12",
+        "case": "Same browser context after ordinary logout",
+        "role": "TEACHER",
+        "method": "GET",
+        "endpoint": "/api/auth/session",
+        "timestampUtc": "2026-11-20T15:14:51.163Z",
+        "status": 200,
+        "authenticatedUserPresent": false
+      }
+    }
+  ],
+  "verifiedPriorScreenshots": [
+    {
+      "label": "HT-17 non-sensitive text filter only",
+      "filename": "PW-3302-HT-17-text-filter.png",
+      "timestampUtc": "2026-11-20T15:14:06.88Z",
+      "sha256": "c09875ef9f34a6a30855dec5626bdfd48dd66846fc994e94621313b21350dd49"
+    },
+    {
+      "label": "English form after ordinary logout in the same context",
+      "filename": "PW-3302-HT-12-signed-out.png",
+      "timestampUtc": "2026-11-20T15:14:51.64Z",
+      "sha256": "9f2a4d50e3a8686581ce5c625145d63c7b1e6c9024879709a94f67ca82094ec6"
+    }
+  ],
+  "unexecuted": [
+    "HT-17 exact synthetic email search on clone",
+    "HT-12 previous-session replay",
+    "HT-15 PARENT-C authenticated positive control"
+  ]
+}

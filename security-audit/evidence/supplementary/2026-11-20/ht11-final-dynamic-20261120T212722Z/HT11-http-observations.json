@@ -1,0 +1,69 @@
+{
+  "test": "HT-11",
+  "criterion": "v5.0.0-7.2.4",
+  "checkedUtc": "2026-11-20T21:27:22.9525679Z",
+  "environment": {
+    "revision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+    "worktreeClean": true,
+    "origin": "http://127.0.0.1:3302",
+    "processId": 35572,
+    "matchedEarlierProcessDatabaseAttestation": true,
+    "databaseAttestationUtc": "2026-11-20T15:12:36.536Z",
+    "database": "happy_town_audit_test",
+    "cloneReadOnlyFixtureCheck": {
+      "matchingActiveTeacherAccounts": 1
+    }
+  },
+  "account": "TEACHER-A",
+  "newHttpObservations": [],
+  "previousCredentialReplayPerformed": false,
+  "previousCredentialAcceptedAfterReauthentication": null,
+  "priorCredentialFingerprintCompared": false,
+  "observedSetCookieRotation": null,
+  "result": "Inconclusive",
+  "priorEvidence": {
+    "source": "../ht11-same-context-20261120T190133Z/HT11-http-observations.json",
+    "checks": [
+      {
+        "method": "GET",
+        "endpoint": "/api/auth/session",
+        "timestampUtc": "2026-11-20T19:01:36.858Z",
+        "status": 200,
+        "authenticatedUser": "TEACHER-A",
+        "role": "TEACHER",
+        "stage": "Initial"
+      },
+      {
+        "method": "GET",
+        "endpoint": "/teacher",
+        "timestampUtc": "2026-11-20T19:01:37.163Z",
+        "status": 200,
+        "stage": "Initial protected access"
+      },
+      {
+        "method": "POST",
+        "endpoint": "/api/auth/callback/credentials",
+        "timestampUtc": "2026-11-20T19:01:38.105Z",
+        "status": 200,
+        "authenticationError": false,
+        "stage": "Second authentication in the same context"
+      },
+      {
+        "method": "GET",
+        "endpoint": "/teacher",
+        "timestampUtc": "2026-11-20T19:01:38.440Z",
+        "status": 200,
+        "stage": "Protected access after re-authentication"
+      },
+      {
+        "method": "GET",
+        "endpoint": "/api/auth/session",
+        "timestampUtc": "2026-11-20T19:01:38.791Z",
+        "status": 200,
+        "authenticatedUser": "TEACHER-A",
+        "role": "TEACHER",
+        "stage": "Identity after re-authentication"
+      }
+    ]
+  }
+}

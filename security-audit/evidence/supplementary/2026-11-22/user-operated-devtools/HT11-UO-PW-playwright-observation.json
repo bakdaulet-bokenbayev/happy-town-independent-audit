@@ -1,0 +1,39 @@
+{
+  "testId": "HT-11",
+  "auditedRevision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "origin": "http://127.0.0.1:3302",
+  "auditDatabase": "happy_town_audit_test",
+  "browser": "Chrome 157.0.8103.79",
+  "sameSyntheticAccount": true,
+  "aReauthenticatedAfterB": false,
+  "events": [
+    {
+      "context": "A",
+      "timestampUtc": "2026-11-22T08:14:19.233Z",
+      "event": "ordinary sign-in",
+      "callbackStatus": 200,
+      "sessionStatus": 200,
+      "role": "TEACHER",
+      "dashboard": true
+    },
+    {
+      "context": "B",
+      "timestampUtc": "2026-11-22T08:14:22.821Z",
+      "event": "ordinary sign-in",
+      "callbackStatus": 200,
+      "sessionStatus": 200,
+      "role": "TEACHER",
+      "dashboard": true
+    },
+    {
+      "context": "A",
+      "event": "protected navigation after B sign-in",
+      "startedAtUtc": "2026-11-22T08:15:30.045Z",
+      "timestampUtc": "2026-11-22T08:15:31.682Z",
+      "method": "GET",
+      "path": "/teacher",
+      "status": 200,
+      "dashboardDisplayed": true
+    }
+  ]
+}

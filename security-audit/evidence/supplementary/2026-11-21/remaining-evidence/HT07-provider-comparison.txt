@@ -1,0 +1,13 @@
+✔ HT-07 pre-limited state denies before lookup and password verification (224.5153ms)
+✔ HT-07 unavailable-account decision updates the limiter at the boundary (2.9503ms)
+✔ HT-07 successful provider verification clears prior failures (1.8805ms)
+✔ HT-07 mismatched in-memory password result updates the limiter (1.4062ms)
+✔ HT-07 eligible provider request succeeds at the simulated recovery boundary (1.87ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 828.5611

@@ -1,0 +1,51 @@
+{
+  "testId": "HT-17",
+  "origin": "http://127.0.0.1:3302",
+  "auditRevision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "database": "happy_town_audit_test",
+  "authenticatedRole": "ADMIN",
+  "browser": "Playwright 1.62.1 on Chromium 157.0.8103.79",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "method": "GET",
+  "url": "http://127.0.0.1:3302/api/admin/entities?kind=teachers&query=audit-teacher%40example.test&status=active&sort=newest&page=1&pageSize=8",
+  "query": {
+    "kind": "teachers",
+    "query": "audit-teacher@example.test",
+    "status": "active",
+    "sort": "newest",
+    "page": "1",
+    "pageSize": "8"
+  },
+  "status": 200,
+  "syntheticEmailAppearedInUrl": true,
+  "expectedFixtureReturned": true,
+  "returnedItemCount": 1,
+  "requestTimestampUtc": "2026-11-20T15:58:06.902Z",
+  "responseTimestampUtc": "2026-11-20T15:58:06.933Z",
+  "requestTimestampBudapest": "20 Nov 2026, 16:58:06 CET",
+  "screenshots": [
+    {
+      "filename": "FV-HT17-01-teacher-search-full.png",
+      "timestampUtc": "2026-11-20T15:58:07.102Z",
+      "sha256": "c4f0a886e9e414a963a1c862c4b2abeed5c196193939c70839367f479f29ec29",
+      "evidenceId": "FV-HT17-01",
+      "testId": "HT-17",
+      "associatedRequestUtc": "2026-11-20T15:58:06.902Z",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "filename": "FV-HT17-02-search-and-result.png",
+      "timestampUtc": "2026-11-20T15:58:07.188Z",
+      "sha256": "6cabebd99a51837455d55fadef8165af9c699e51d006eef8217ac67d9952efea",
+      "evidenceId": "FV-HT17-02",
+      "testId": "HT-17",
+      "associatedRequestUtc": "2026-11-20T15:58:06.902Z",
+      "width": 1196,
+      "height": 366
+    }
+  ]
+}

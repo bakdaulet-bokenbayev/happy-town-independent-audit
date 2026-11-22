@@ -1,0 +1,28 @@
+{
+  "timestampUtc": "2026-11-20T15:29:06.9813375+00:00",
+  "revision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "originalTablesUnchanged": 32,
+  "cloneUnchangedTables": 31,
+  "cloneChangedTables": [
+    "audit_logs"
+  ],
+  "cloneAuditRowsBefore": 22,
+  "cloneAuditRowsAfter": 28,
+  "newAuditEntries": [
+    {
+      "count": 2,
+      "kind": "LOGIN|Authentication|ADMIN|SUCCESS"
+    },
+    {
+      "count": 3,
+      "kind": "LOGIN|Authentication|PARENT|SUCCESS"
+    },
+    {
+      "count": 1,
+      "kind": "LOGIN|Authentication|TEACHER|SUCCESS"
+    }
+  ],
+  "originalProcessPid": 34128,
+  "cloneProcessPid": 35572,
+  "sourceWorktreeClean": true
+}

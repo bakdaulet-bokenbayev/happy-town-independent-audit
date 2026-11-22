@@ -1,0 +1,715 @@
+{
+  "description": "Fieldwork observations. Request values, raw cookies, actual record identifiers, response bodies, and different-origin redirect locations are omitted.",
+  "httpStartedUtc": "2026-11-19T10:42:49.702Z",
+  "httpFinishedUtc": "2026-11-19T10:42:58.247Z",
+  "http": {
+    "database": {
+      "db": "happy_town_audit",
+      "dbuser": "happy_town_audit",
+      "version": "17.10",
+      "ssl": "off",
+      "seedMarker": true,
+      "exactSeedIds": true,
+      "users": 23,
+      "students": 24,
+      "groups": 5,
+      "roleCounts": [
+        {
+          "role": "ADMIN",
+          "total": 1,
+          "usable": 1
+        },
+        {
+          "role": "PARENT",
+          "total": 18,
+          "usable": 1
+        },
+        {
+          "role": "TEACHER",
+          "total": 4,
+          "usable": 1
+        }
+      ]
+    },
+    "activeBefore": {
+      "users": 23,
+      "students": 24,
+      "links": 24
+    },
+    "ordinarySignIn": {
+      "ADMIN": {
+        "callback": {
+          "method": "POST",
+          "status": 302,
+          "redirectPath": "[different origin withheld]",
+          "redirectFields": [],
+          "redirectContainsCredentialMaterial": false,
+          "queryFields": [],
+          "hasMain": false,
+          "hasAdminPortal": false,
+          "hasItems": false,
+          "hasStudent": false,
+          "hasGroup": false,
+          "errorCode": null
+        },
+        "sessionStatus": 200,
+        "roleMatches": true,
+        "issued": true
+      },
+      "TEACHER": {
+        "callback": {
+          "method": "POST",
+          "status": 302,
+          "redirectPath": "[different origin withheld]",
+          "redirectFields": [],
+          "redirectContainsCredentialMaterial": false,
+          "queryFields": [],
+          "hasMain": false,
+          "hasAdminPortal": false,
+          "hasItems": false,
+          "hasStudent": false,
+          "hasGroup": false,
+          "errorCode": null
+        },
+        "sessionStatus": 200,
+        "roleMatches": true,
+        "issued": true
+      },
+      "PARENT": {
+        "callback": {
+          "method": "POST",
+          "status": 302,
+          "redirectPath": "[different origin withheld]",
+          "redirectFields": [],
+          "redirectContainsCredentialMaterial": false,
+          "queryFields": [],
+          "hasMain": false,
+          "hasAdminPortal": false,
+          "hasItems": false,
+          "hasStudent": false,
+          "hasGroup": false,
+          "errorCode": null
+        },
+        "sessionStatus": 200,
+        "roleMatches": true,
+        "issued": true
+      }
+    },
+    "portalBaseline": {
+      "ADMIN": {
+        "method": "GET",
+        "status": 200,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": true,
+        "hasAdminPortal": true,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      "TEACHER": {
+        "method": "GET",
+        "status": 200,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": true,
+        "hasAdminPortal": false,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      "PARENT": {
+        "method": "GET",
+        "status": 200,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": true,
+        "hasAdminPortal": false,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      }
+    },
+    "independentIssuance": {
+      "bothIssued": true,
+      "different": true,
+      "roleMatches": true
+    },
+    "roles": {
+      "anonAdminPortal": {
+        "method": "GET",
+        "status": 307,
+        "redirectPath": "/login",
+        "redirectFields": [
+          "callbackUrl"
+        ],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": false,
+        "hasAdminPortal": false,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      "anonAdminApi": {
+        "method": "GET",
+        "status": 401,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [
+          "kind"
+        ],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": "UNAUTHORIZED"
+      },
+      "teacherAdminPortal": {
+        "method": "GET",
+        "status": 307,
+        "redirectPath": "/teacher",
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": false,
+        "hasAdminPortal": false,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      "teacherAdminApi": {
+        "method": "GET",
+        "status": 403,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [
+          "kind"
+        ],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": "FORBIDDEN"
+      },
+      "parentAdminApi": {
+        "method": "GET",
+        "status": 403,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [
+          "kind"
+        ],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": "FORBIDDEN"
+      },
+      "adminList": {
+        "method": "GET",
+        "status": 200,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [
+          "kind"
+        ],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": true,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      }
+    },
+    "safeMethods": {
+      "signoutPage": {
+        "method": "GET",
+        "status": 200,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": false,
+        "hasAdminPortal": false,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      "adminHead": {
+        "method": "HEAD",
+        "status": 200,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [
+          "kind"
+        ],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      "fixtureCountsUnchanged": true,
+      "authAuditCountsUnchanged": true,
+      "stillAdmin": true
+    },
+    "validation": {
+      "missingCredential": {
+        "callback": {
+          "method": "POST",
+          "status": 302,
+          "redirectPath": "[different origin withheld]",
+          "redirectFields": [],
+          "redirectContainsCredentialMaterial": false,
+          "queryFields": [],
+          "hasMain": false,
+          "hasAdminPortal": false,
+          "hasItems": false,
+          "hasStudent": false,
+          "hasGroup": false,
+          "errorCode": null
+        },
+        "sessionStatus": 200,
+        "roleMatches": false,
+        "issued": false
+      },
+      "hasAuthenticatedUser": false,
+      "unsupportedEntityType": {
+        "method": "GET",
+        "status": 400,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [
+          "kind"
+        ],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": "VALIDATION_ERROR"
+      },
+      "missingRequiredName": {
+        "method": "POST",
+        "status": 400,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": "VALIDATION_ERROR"
+      },
+      "invalidFixtureRows": 0,
+      "activeAccountCountUnchanged": true,
+      "invalidAuthAuditEventConfirmed": true
+    },
+    "requestLocations": {
+      "syntheticContactSearch": {
+        "method": "GET",
+        "path": "/api/admin/entities",
+        "fields": [
+          "kind",
+          "query"
+        ],
+        "status": 200,
+        "syntheticEmailWasInUrl": true,
+        "matchedFixture": true
+      }
+    },
+    "provision": {
+      "parentCreate": {
+        "method": "POST",
+        "status": 201,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      "studentCreate": {
+        "method": "POST",
+        "status": 201,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      }
+    },
+    "relationships": {
+      "parentAOwnAndNoCrossLink": true,
+      "parentBOwnAndNoCrossLink": true,
+      "teacherGroupAssignmentsChecked": true,
+      "teacherStudentAssignmentsChecked": true
+    },
+    "parentBSignIn": {
+      "callback": {
+        "method": "POST",
+        "status": 302,
+        "redirectPath": "[different origin withheld]",
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": false,
+        "hasAdminPortal": false,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      "sessionStatus": 200,
+      "roleMatches": true,
+      "issued": true
+    },
+    "recordFixtures": [
+      {
+        "label": "PARENT-A / student A",
+        "method": "GET",
+        "status": 200,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": true,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      {
+        "label": "PARENT-A / student B",
+        "method": "GET",
+        "status": 404,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      {
+        "label": "PARENT-B / student B",
+        "method": "GET",
+        "status": 200,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": true,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      {
+        "label": "PARENT-B / student A",
+        "method": "GET",
+        "status": 404,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      {
+        "label": "TEACHER-A / assigned student",
+        "method": "GET",
+        "status": 200,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": true,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      {
+        "label": "TEACHER-A / unassigned student",
+        "method": "GET",
+        "status": 404,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      {
+        "label": "TEACHER-A / assigned group",
+        "method": "GET",
+        "status": 200,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": true,
+        "errorCode": null
+      },
+      {
+        "label": "TEACHER-A / unassigned group",
+        "method": "GET",
+        "status": 404,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      {
+        "label": "PARENT-A / group endpoint",
+        "method": "GET",
+        "status": 404,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      {
+        "label": "ADMIN-A / student B",
+        "method": "GET",
+        "status": 200,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": true,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      {
+        "label": "ADMIN-A / unassigned teacher student",
+        "method": "GET",
+        "status": 200,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": true,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      {
+        "label": "ADMIN-A / unassigned teacher group",
+        "method": "GET",
+        "status": 200,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": true,
+        "errorCode": null
+      },
+      {
+        "label": "ANON / student endpoint",
+        "method": "GET",
+        "status": 401,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": "UNAUTHORIZED"
+      }
+    ],
+    "logout": {
+      "beforePortal": {
+        "method": "GET",
+        "status": 200,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": true,
+        "hasAdminPortal": false,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      "signout": {
+        "method": "POST",
+        "status": 302,
+        "redirectPath": "[different origin withheld]",
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": false,
+        "hasAdminPortal": false,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      "afterSessionStatus": 200,
+      "afterHasUser": false,
+      "afterBrowserHasSessionCookie": false,
+      "afterPortal": {
+        "method": "GET",
+        "status": 500,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [],
+        "hasMain": false,
+        "hasAdminPortal": false,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": null
+      },
+      "afterProtectedApi": {
+        "method": "GET",
+        "status": 401,
+        "redirectPath": null,
+        "redirectFields": [],
+        "redirectContainsCredentialMaterial": false,
+        "queryFields": [
+          "kind"
+        ],
+        "hasMain": null,
+        "hasAdminPortal": null,
+        "hasItems": false,
+        "hasStudent": false,
+        "hasGroup": false,
+        "errorCode": "UNAUTHORIZED"
+      }
+    },
+    "cleanup": {
+      "softArchivedParents": 1,
+      "softArchivedStudents": 1,
+      "softArchivedParentLinks": 1,
+      "newFixtureLoginDisabled": true,
+      "activeAfter": {
+        "users": 23,
+        "students": 24,
+        "links": 24
+      }
+    }
+  },
+  "browser": {
+    "started": "2026-11-19T10:46:31.374Z",
+    "mask": {
+      "initial": "password",
+      "revealed": "text",
+      "restored": "password",
+      "reloadType": "password",
+      "blankBeforeScreenshot": true,
+      "screenshot": "HT-06-login.png"
+    },
+    "browserAuth": {},
+    "contactSearch": {},
+    "browserVersion": "157.0.8103.79",
+    "formReady": {
+      "usernameLength": 12,
+      "passwordFilled": true,
+      "formValid": true
+    },
+    "interrupted": {
+      "stage": "normal browser sign-in",
+      "errorType": "TimeoutError"
+    },
+    "finished": "2026-11-19T10:47:04.115Z"
+  },
+  "limiter": {
+    "started": "2026-11-19T10:47:07.312Z",
+    "mode": "in-process, simulated clock, no HTTP or database",
+    "initiallyAllowed": true,
+    "allowedBeforeThreshold": true,
+    "deniedAtConfiguredThreshold": true,
+    "separateFixtureUnaffected": true,
+    "secondFixtureDeniedBeforeClear": true,
+    "allowedAfterExplicitClear": true,
+    "allowedAtWindowEnd": true,
+    "finished": "2026-11-19T10:47:07.316Z"
+  },
+  "jwtExpiry": {
+    "observed": "2026-11-19T10:46:14.08Z",
+    "mode": "isolated Auth.js library check with generated credentials and no HTTP or application token",
+    "freshFixtureDecoded": true,
+    "expiredFixtureRejected": true
+  }
+}

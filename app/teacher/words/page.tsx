@@ -1,0 +1,2 @@
+import { requireTeacher } from "../../../lib/auth/authorization";import { getTeacherWords } from "../../../lib/repositories/teacher-pages.repository";import { TeacherWordsPage } from "../../../components/teacher-pages";
+import { TeacherCreateForm } from "../../../components/teacher-create-forms";export const dynamic="force-dynamic";export const revalidate=0;export default async function Page(){const user=await requireTeacher(),data=await getTeacherWords(user.userId);return <><TeacherCreateForm kind="words"/><TeacherWordsPage data={data}/></>}

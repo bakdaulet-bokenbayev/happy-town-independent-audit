@@ -1,0 +1,42 @@
+✔ HT-11 consumes the application identity mapping for two successive sign-ins (36.0091ms)
+✔ HT-11 denies a request when the trusted session boundary returns no current identity (19.8022ms)
+✔ Session guards reject an unavailable account on a fresh account lookup (15.537ms)
+✔ HT-12 installed Auth.js sign-out calls cleanup and the app guard denies a signed-out request (28.4953ms)
+✔ HT-11 server-side invalidation of the earlier session after re-authentication remains unverified (0.1688ms) # TODO
+✔ HT-12 server-side invalidation of the earlier session after logout remains unverified (0.1545ms) # TODO
+✔ credentials authentication uses IIN and never serializes it (3.724ms)
+✔ login form accepts only twelve digits and uses a generic error (2.8539ms)
+✔ IIN migration preserves AcademicPeriod and admin navigation has no periods route (5.0695ms)
+✔ parent UI receives only a masked IIN (2.4909ms)
+✔ teacher/dashboard has an independent server page (20.7997ms)
+✔ teacher/groups has an independent server page (2.2847ms)
+✔ teacher/students has an independent server page (1.7035ms)
+✔ teacher/attendance has an independent server page (2.4471ms)
+✔ teacher/lessons has an independent server page (1.5296ms)
+✔ teacher/homework has an independent server page (1.4907ms)
+✔ teacher/words has an independent server page (1.8672ms)
+✔ teacher/tests has an independent server page (1.4053ms)
+✔ teacher/assessments has an independent server page (1.4573ms)
+✔ teacher/reviews has an independent server page (2.1229ms)
+✔ teacher/profile has an independent server page (1.8063ms)
+✔ parent/dashboard has an independent server page (1.4761ms)
+✔ parent/topics has an independent server page (2.3953ms)
+✔ parent/words has an independent server page (2.2299ms)
+✔ parent/homework has an independent server page (1.3282ms)
+✔ parent/attendance has an independent server page (2.8145ms)
+✔ parent/tests has an independent server page (1.578ms)
+✔ parent/progress has an independent server page (1.8231ms)
+✔ parent/reviews has an independent server page (4.9978ms)
+✔ parent/history has an independent server page (1.3521ms)
+✔ parent/profile has an independent server page (1.7481ms)
+✔ dynamic detail routes use scoped queries (1.7645ms)
+✔ teacher and parent menus point to their separate pages (1.6585ms)
+✔ role pages do not expose implementation language (4.1311ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 32
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 2
+ℹ duration_ms 900.6175

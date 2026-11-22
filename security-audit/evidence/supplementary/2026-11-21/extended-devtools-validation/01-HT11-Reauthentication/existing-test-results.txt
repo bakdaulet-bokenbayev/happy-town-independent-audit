@@ -1,0 +1,36 @@
+✔ credentials authentication uses IIN and never serializes it (5.0171ms)
+✔ login form accepts only twelve digits and uses a generic error (4.5116ms)
+✔ IIN migration preserves AcademicPeriod and admin navigation has no periods route (5.1138ms)
+✔ parent UI receives only a masked IIN (2.8396ms)
+✔ teacher/dashboard has an independent server page (17.0908ms)
+✔ teacher/groups has an independent server page (1.806ms)
+✔ teacher/students has an independent server page (2.2475ms)
+✔ teacher/attendance has an independent server page (2.2201ms)
+✔ teacher/lessons has an independent server page (2.6492ms)
+✔ teacher/homework has an independent server page (2.3593ms)
+✔ teacher/words has an independent server page (1.443ms)
+✔ teacher/tests has an independent server page (1.4401ms)
+✔ teacher/assessments has an independent server page (1.2133ms)
+✔ teacher/reviews has an independent server page (1.2196ms)
+✔ teacher/profile has an independent server page (1.2726ms)
+✔ parent/dashboard has an independent server page (1.3954ms)
+✔ parent/topics has an independent server page (1.3581ms)
+✔ parent/words has an independent server page (1.8687ms)
+✔ parent/homework has an independent server page (1.5541ms)
+✔ parent/attendance has an independent server page (1.5612ms)
+✔ parent/tests has an independent server page (1.0608ms)
+✔ parent/progress has an independent server page (1.1814ms)
+✔ parent/reviews has an independent server page (2.4456ms)
+✔ parent/history has an independent server page (1.7212ms)
+✔ parent/profile has an independent server page (1.1015ms)
+✔ dynamic detail routes use scoped queries (1.3555ms)
+✔ teacher and parent menus point to their separate pages (0.946ms)
+✔ role pages do not expose implementation language (3.0625ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 334.322

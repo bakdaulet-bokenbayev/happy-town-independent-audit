@@ -1,0 +1,14 @@
+{
+  "officialASVSRequirementsChecked": 17,
+  "findingsChecked": 4,
+  "priorBackupFilesVerified": 275,
+  "retainedAuthenticationHttpEventsChecked": 17,
+  "retainedNativeAuthorizationScenariosChecked": 6,
+  "newPublicHttpObservations": 1,
+  "newNativeChromeDevToolsCaptures": 0,
+  "previousSubmissionsPreserved": true,
+  "retainedManifestEntriesChecked": 186,
+  "retainedManifestEntriesMatching": 166,
+  "historicalDigestsOfSupersededDocuments": 20,
+  "externalIndependentSignOff": false
+}

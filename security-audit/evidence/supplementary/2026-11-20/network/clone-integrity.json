@@ -1,0 +1,37 @@
+{
+  "createdUtc": "2026-11-20T15:11:23.0297555+00:00",
+  "verifiedUtc": "2026-11-20T15:16:38.7903602+00:00",
+  "original": "happy_town_audit",
+  "copy": "happy_town_audit_test",
+  "initiallyMatchingTables": 32,
+  "originalTableFingerprintsUnchanged": true,
+  "initialCounts": {
+    "users": 24,
+    "students": 25,
+    "parentStudentLinks": 25,
+    "auditLogs": 17
+  },
+  "existingAuditRowsUnchangedOnCopy": true,
+  "copyAuditLogRowsAfter": 22,
+  "changedTablesOnCopy": [
+    "audit_logs"
+  ],
+  "newAuditLogEvents": [
+    {
+      "count": 1,
+      "event": "LOGIN|Authentication|ADMIN|SUCCESS"
+    },
+    {
+      "count": 2,
+      "event": "LOGIN|Authentication|PARENT|SUCCESS"
+    },
+    {
+      "count": 2,
+      "event": "LOGIN|Authentication|TEACHER|SUCCESS"
+    }
+  ],
+  "originalPid": 34128,
+  "copyPid": 35572,
+  "revision": "f23375fee54bae8942a1c23a702adb04ed6c99a2",
+  "worktreeClean": true
+}

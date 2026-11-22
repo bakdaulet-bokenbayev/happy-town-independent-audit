@@ -1,0 +1,5 @@
+# Használt Mesterséges Intelligencia Eszközök
+
+**[AI1] OpenAI, Codex desktop, GPT-6 family.** The exact deployed model revision is unavailable. Use documented on 21 November 2026. Codex helped draft and edit policy and report text, write audit evidence and validation scripts, compare records, prepare deterministic submission redactions and package the report and defense deck. AI-assisted material includes the current follow-up and submission-review sections, verification summaries and presentation revisions. The HTTP observations and DevTools images came from browser runs. The marked HT-15 submission copies contain opaque masks and a provenance footer applied to genuine captures.
+
+The published Óbuda University policy sets out AI-use marking and human validation. The course-specific instruction was unavailable for this review. The students remain responsible for reviewing the submission and following the instructor's requirements. [Óbuda University regulation, §§17–18](https://uni-obuda.hu/wp-content/uploads/2026/10/Obudai_Egyetem_AI_oktatasi_terulet_szabalyozas_20261020_sk.pdf)

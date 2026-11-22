@@ -1,0 +1,16 @@
+{
+  "testId": "HT-07",
+  "evidenceId": "RV-HT07-HTTP",
+  "timestampUtc": "2026-11-21T19:46:17.8450699+00:00",
+  "method": "GET",
+  "uri": "http://127.0.0.1:3302/login",
+  "processId": 35572,
+  "processStartedUtc": "2026-11-20T15:12:35.4230570Z",
+  "requestBody": false,
+  "sentCredentials": false,
+  "status": 200,
+  "contentType": "text/html; charset=utf-8",
+  "cacheControl": "must-revalidate, no-cache",
+  "htmlContainsPasswordInput": true,
+  "conclusion": "Public login availability only. No sign-in attempt was made."
+}
