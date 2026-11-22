@@ -12,3 +12,4 @@
 # Preserve audit evidence and release checksums byte for byte.
 security-audit/** -text
 Happy-Town-Academic-Submission-2026-11-22/** -text
+deliverables/final/** -text

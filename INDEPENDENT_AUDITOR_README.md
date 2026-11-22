@@ -29,6 +29,8 @@ Use npm test for the repository's tests. npm run typecheck and npm run lint prov
 
 ## Review the audit
 
+- [Final academic release](deliverables/final/Happy_Town_Final_Audit_Report.pdf) supersedes the earlier academic presentation package for submission. See its [evidence index](deliverables/final/Evidence_Index.md) and [QA checklist](deliverables/final/FINAL_QA_CHECKLIST.md).
+
 - [Verification matrix](security-audit/asvs/verification-matrix.csv) lists 17 evaluated ASVS requirements, with 11 Pass, 6 Fail and 0 Inconclusive.
 - [Findings register](security-audit/findings/findings-register.csv) lists four open findings, one Medium and three Low.
 - [Evidence register](security-audit/evidence/evidence-register.md) indexes test IDs and observations. The [22 November records](security-audit/evidence/supplementary/2026-11-22/user-operated-devtools/evidence-index.md) link the supplementary Playwright and user-operated DevTools evidence.
